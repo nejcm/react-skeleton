@@ -1,7 +1,7 @@
 import { boolean, number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { module } from 'react';
-import { Comment } from '../../components/Templates/Comment';
+import { Comment } from '../../index';
 import markdown from './comment.md';
 
 const story = () => {

@@ -1,11 +1,7 @@
 import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { module } from 'react';
-import Skeleton from '../../components/Skeleton';
-import { Card } from '../../components/Templates/Card';
-import { Comment } from '../../components/Templates/Comment';
-import { Grid } from '../../components/Templates/Grid';
-import { Paragraph } from '../../components/Templates/Paragraph';
+import Skeleton, { Card, Comment, Grid, Paragraph } from '../../index';
 import markdown from './other.md';
 const story = () => {
 

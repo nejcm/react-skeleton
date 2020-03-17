@@ -1,8 +1,7 @@
 import { number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { module } from 'react';
-import { Card } from '../../components/Templates/Card';
-import { Grid } from '../../components/Templates/Grid';
+import { Card, Grid } from '../../index';
 import markdown from './grid.md';
 
 const story = () => {
