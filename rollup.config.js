@@ -67,10 +67,12 @@ const umdConfig = ({minify} = {}) => ({
         minify ? 'production' : 'development',
       ),
     }),
-    commonjs(),
+    commonjs({
+      exclude: ['**/*.story.js'],
+    }),
     minify ? uglify() : { },
+    scssConfig,
     filesize(),
-    scssConfig
   ],
 });
 
@@ -84,7 +86,7 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.main, format: 'cjs'}],
-    plugins: [resolve(), babel(babelConfig({useESModules: false})), filesize(), scssConfig],
+    plugins: [resolve(), babel(babelConfig({useESModules: false})), scssConfig, filesize()],
   },
 
   // ES module
@@ -92,7 +94,7 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.module, format: 'esm'}],
-    plugins: [resolve(), babel(babelConfig()), filesize(), scssConfig],
+    plugins: [resolve(), babel(babelConfig()), scssConfig, filesize()],
   },
 ];
 
