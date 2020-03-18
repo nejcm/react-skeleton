@@ -1,14 +1,17 @@
 import { withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { module } from 'react';
-import Skeleton, { Card, Comment, Grid, Paragraph } from '../../index';
+import Skeleton, { Card, Comment, Form, Grid, Paragraph } from '../../index';
+import './custom-styles.css';
 import markdown from './other.md';
+
+
 const story = () => {
 
   return (
     <>
       <h2>
-        Check notes.
+        Check notes for more info.
       </h2>
 
       <h3>1.</h3>
@@ -36,10 +39,16 @@ const story = () => {
 
       <br />
       <h3>4.</h3>
-      <div stlye={{padding: 15}}>
+      <div style={{padding: 15}}>
         <Grid cols={4}>
           {({index}) => (<Paragraph title={index === 1 || index === 2} lines={5} />)}
         </Grid>
+      </div>
+
+      <br />
+      <h3>5.</h3>
+      <div>
+        <Form className="custom-form" />
       </div>
 
     </>

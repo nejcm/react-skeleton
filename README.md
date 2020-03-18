@@ -71,7 +71,15 @@ React skeleton loader.
 ## Installation
 
 ```shell
+
 $ npm install --save @nejcm/react-skeleton
+
+```
+
+```jsx
+
+import Skeleton, { Card, Form } from '@nejcm/react-skeleton';
+
 ```
 
 ## Docs

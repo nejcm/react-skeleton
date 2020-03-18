@@ -114,6 +114,20 @@ export default YourComponent;
       <td></td>
       <td>Set the max height of the rectangle.</td>
     </tr>
+    <tr>
+      <td>minWidth</td>
+      <td>string | number</td>
+      <td>false</td>
+      <td></td>
+      <td>Set the min width of the rectangle.</td>
+    </tr>
+    <tr>
+      <td>minHeight</td>
+      <td>string | number</td>
+      <td>false</td>
+      <td></td>
+      <td>Set the min height of the rectangle.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -157,6 +171,20 @@ export default YourComponent;
       <td>false</td>
       <td></td>
       <td>Set the max height of the circle.</td>
+    </tr>
+    <tr>
+      <td>minWidth</td>
+      <td>string | number</td>
+      <td>false</td>
+      <td></td>
+      <td>Set the min width of the circle.</td>
+    </tr>
+    <tr>
+      <td>minHeight</td>
+      <td>string | number</td>
+      <td>false</td>
+      <td></td>
+      <td>Set the min height of the circle.</td>
     </tr>
   </tbody>
 </table>

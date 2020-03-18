@@ -1,5 +1,7 @@
-.skeleton {
-  .loader {
+import styled from '@emotion/styled';
+
+export const SkeletonWrapper = styled.div`
+  .s-loader {
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.055);
@@ -19,25 +21,25 @@
     }
   }
 
-  &.active {
-    .loader {
+  &.s-active {
+    .s-loader {
       &:after {
         animation: loading 1.75s 0.5s infinite;
       }
     }
   }
 
-  &.inactive {
-    .loader {
+  &.s-inactive {
+    .s-loader {
       &:after {
         animation: none;
       }
     }
   }
 
-  &.dark {
-    .loader {
-      background-color: rgba(255, 255, 255, 0.08);
+  &.s-dark {
+    .s-loader {
+      background-color: rgba(255, 255, 255, 0.175);
       &:after {
         background: linear-gradient(
           90deg,
@@ -55,10 +57,10 @@
     }
   }
 
-  .rect {
+  .s-rect {
     border-radius: 2px;
   }
-  .circ {
+  .s-circ {
     border-radius: 50%;
   }
-}
+`;

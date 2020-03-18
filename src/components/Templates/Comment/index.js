@@ -1,20 +1,21 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Skeleton from '../../Skeleton';
-import { Paragraph } from '../Paragraph';
-import './styles.scss';
+import {Paragraph} from '../Paragraph';
+import {Wrapper} from './styles';
 
 export const Comment = ({
   avatarSize = 45,
   avatarCircle = true,
   lines = 3,
   skeletonProps,
+  className,
   children,
   ...rest
 }) => {
   return (
     <Skeleton {...skeletonProps}>
-      <div className="comment" {...rest}>
+      <Wrapper className={`s-comment ${className || ''}`} {...rest}>
         <div>
           {avatarCircle ? (
             <Skeleton.Circle width={avatarSize} height={avatarSize} />
@@ -26,7 +27,7 @@ export const Comment = ({
           <Paragraph title={false} lines={lines} />
           {children}
         </div>
-      </div>
+      </Wrapper>
     </Skeleton>
   );
 };
@@ -35,6 +36,7 @@ Comment.propTypes = {
   avatarSize: PropTypes.number,
   avatarCircle: PropTypes.bool,
   lines: PropTypes.number,
+  className: PropTypes.string,
   skeletonProps: PropTypes.object,
   children: PropTypes.node,
 };

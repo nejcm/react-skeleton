@@ -55,6 +55,13 @@ export default YourComponent;
       <td>Number of inputs.</td>
     </tr>
     <tr>
+      <td>inputHeight</td>
+      <td>number | string</td>
+      <td>false</td>
+      <td></td>
+      <td>Height of the inputs and button.</td>
+    </tr>
+    <tr>
       <td>widths</td>
       <td>array(string | number)</td>
       <td>false</td>

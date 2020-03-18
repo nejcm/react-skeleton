@@ -67,7 +67,7 @@ export default YourComponent;
 ```
 <br/>
 
-### 3. Grid with custom elements
+### 4. Grid with custom elements
 
 ```jsx
 
@@ -78,6 +78,36 @@ const YourComponent = () => {
   return <Grid cols={4}>
     {({index}) => (<Paragraph title={index === 1 || index === 2} lines={5} />)}
   </Grid>;
+};
+
+export default YourComponent;
+
+```
+<br/>
+
+### 5. Custom styles
+
+```css 
+
+.custom-form {
+  background-color: #eee;
+}
+
+.custom-form.s-form > .s-input {
+  margin-bottom: 3rem;
+  border: solid 1px blue;
+}
+
+```
+
+```jsx
+
+import React from 'react';
+import Skeleton, {Form} from '@nejcm/react-skeleton';
+import 'custom-form-styles.css'
+
+const YourComponent = () => {
+  return <Form className="custom-form" />;
 };
 
 export default YourComponent;

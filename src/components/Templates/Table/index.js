@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Skeleton from '../../Skeleton';
-import './styles.scss';
+import {Wrapper} from './styles';
 
 const widths = ['45px', '175px', '100px', '100px', '75px'];
 
@@ -10,6 +10,7 @@ export const Table = ({
   rows = 3,
   cols = 4,
   skeletonProps,
+  className,
   children,
   ...rest
 }) => {
@@ -20,19 +21,19 @@ export const Table = ({
 
   const td = colIter.map((__, j) => (
     <td key={`c-${j}`} style={isArray ? undefined : {width: widths[j % max]}}>
-      <Skeleton.Rectangle className="cell" />
+      <Skeleton.Rectangle className="s-cell" />
     </td>
   ));
 
   return (
     <Skeleton {...skeletonProps}>
-      <table {...rest}>
+      <Wrapper className={`s-table ${className || ''}`} {...rest}>
         {head ? (
           <thead>
             <tr>
               {colIter.map((val, i) => (
                 <th key={i} align="left">
-                  <Skeleton.Rectangle className="cell">
+                  <Skeleton.Rectangle className="s-cell">
                     <span>{val}</span>
                   </Skeleton.Rectangle>
                 </th>
@@ -46,7 +47,7 @@ export const Table = ({
           ))}
           {children}
         </tbody>
-      </table>
+      </Wrapper>
     </Skeleton>
   );
 };
@@ -58,6 +59,7 @@ Table.propTypes = {
     PropTypes.bool,
     PropTypes.arrayOf(PropTypes.string),
   ]),
+  className: PropTypes.string,
   skeletonProps: PropTypes.object,
   children: PropTypes.node,
 };

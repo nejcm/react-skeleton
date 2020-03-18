@@ -3,7 +3,7 @@ import React from 'react';
 import {measure2Css} from '../../../helpers';
 import Skeleton from '../../Skeleton';
 import {Paragraph} from '../Paragraph';
-import './styles.scss';
+import {Wrapper} from './styles';
 
 export const Card = ({
   width,
@@ -12,6 +12,7 @@ export const Card = ({
   title,
   paragraph,
   skeletonProps,
+  className,
   children,
   style,
   ...rest
@@ -23,8 +24,12 @@ export const Card = ({
   };
   return (
     <Skeleton {...skeletonProps}>
-      <div className="card" style={internalStyle} {...rest}>
-        {image ? <Skeleton.Rectangle className="image" height={200} /> : null}
+      <Wrapper
+        className={`s-card ${className || ''}`}
+        style={internalStyle}
+        {...rest}
+      >
+        {image ? <Skeleton.Rectangle className="s-image" height={200} /> : null}
         {title || paragraph ? (
           <Paragraph
             title={title}
@@ -33,7 +38,7 @@ export const Card = ({
           />
         ) : null}
         {children}
-      </div>
+      </Wrapper>
     </Skeleton>
   );
 };
@@ -44,6 +49,7 @@ Card.propTypes = {
   image: PropTypes.bool,
   title: PropTypes.bool,
   paragraph: PropTypes.bool,
+  className: PropTypes.string,
   skeletonProps: PropTypes.object,
   children: PropTypes.node,
   style: PropTypes.object,

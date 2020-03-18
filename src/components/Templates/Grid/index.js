@@ -1,12 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Skeleton from '../../Skeleton';
-import './styles.scss';
+import {Wrapper} from './styles';
 
-export const Grid = ({cols = 3, skeletonProps, children, ...rest}) => {
+export const Grid = ({
+  cols = 3,
+  className,
+  skeletonProps,
+  children,
+  ...rest
+}) => {
   return (
     <Skeleton {...skeletonProps}>
-      <div className="deck" {...rest}>
+      <Wrapper className={`s-grid ${className || ''}`} {...rest}>
         {cols
           ? [...Array(cols)].map((_, i) => (
               <div key={i}>
@@ -16,13 +22,14 @@ export const Grid = ({cols = 3, skeletonProps, children, ...rest}) => {
               </div>
             ))
           : null}
-      </div>
+      </Wrapper>
     </Skeleton>
   );
 };
 
 Grid.propTypes = {
   cols: PropTypes.number,
+  className: PropTypes.string,
   skeletonProps: PropTypes.object,
   children: PropTypes.oneOf([PropTypes.node, PropTypes.func]),
 };
