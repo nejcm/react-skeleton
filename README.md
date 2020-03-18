@@ -106,6 +106,7 @@ instead of filing an issue on GitHub.
 
 - Nejc Muršič ( [GitHub][github], [LinkedIn][linkedin] )
 
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
