@@ -1,3 +1,5 @@
+import autoprefixer from 'autoprefixer';
+import postcss from 'postcss';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
@@ -8,11 +10,15 @@ import { uglify } from 'rollup-plugin-uglify';
 // eslint-disable-next-line import/extensions
 import pkg from './package.json';
 
+
 const external = (id) => !id.startsWith('.') && !id.startsWith('/');
 
-const scssConfig = sass({
-  insert: true
-});
+const stylesConfig = {
+  output: 'dist/bundle.css',
+  processor: (css) => postcss([autoprefixer])
+    .process(css)
+    .then((result) => result.css)
+}
 
 const babelConfig = (
   {useESModules, targets} = {
@@ -47,6 +53,7 @@ const umdConfig = ({minify} = {}) => ({
   external: ['react', 'react-dom', 'prop-types'],
   output: {
     name: pkg.name,
+    sourcemap: true,
     file: minify ? pkg['umd:main'].replace('.js', '.min.js') : pkg['umd:main'],
     format: 'umd',
     globals: {
@@ -56,6 +63,7 @@ const umdConfig = ({minify} = {}) => ({
     },
   },
   plugins: [
+    sass(stylesConfig),
     resolve(),
     babel(
       babelConfig({
@@ -71,7 +79,6 @@ const umdConfig = ({minify} = {}) => ({
       exclude: ['**/*.story.js'],
     }),
     minify ? uglify() : { },
-    scssConfig,
     filesize(),
   ],
 });
@@ -86,7 +93,12 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.main, format: 'cjs'}],
-    plugins: [resolve(), babel(babelConfig({useESModules: false})), scssConfig, filesize()],
+    plugins: [
+      sass(stylesConfig),
+      resolve(),
+      babel(babelConfig({useESModules: false})),
+      filesize()
+    ],
   },
 
   // ES module
@@ -94,7 +106,12 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.module, format: 'esm'}],
-    plugins: [resolve(), babel(babelConfig()), scssConfig, filesize()],
+    plugins: [
+      sass(stylesConfig),
+      resolve(),
+      babel(babelConfig()),
+      filesize()
+    ],
   },
 ];
 
