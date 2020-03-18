@@ -98,6 +98,7 @@
     "docz": "^2.2.0",
     "docz-theme-default": "^1.2.0",
     "emotion": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "eslint-config-kentcdodds": "^14.8.0",
     "eslint-plugin-react": "7.19.0",
     "gh-pages": "^2.2.0",
