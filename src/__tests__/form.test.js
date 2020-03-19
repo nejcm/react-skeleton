@@ -26,6 +26,20 @@ test('renders form with props', () => {
   expect(container.querySelectorAll('.s-input')).toHaveLength(amount);
 });
 
+test('renders form with empty widths should be always 100%', () => {
+  const widths = [];
+
+  const {container} = render(<Form widths={widths} />);
+  const elem = container.querySelector('.s-input');
+  expect(elem).toHaveStyle({width: '100%'});
+});
+
+test('renders form without labels', () => {
+  const {container} = render(<Form label={false} />);
+  const elem = container.querySelector('.s-label');
+  expect(elem).toBeNull();
+});
+
 test('renders form with children', () => {
   const {getByTestId} = render(
     <Form>

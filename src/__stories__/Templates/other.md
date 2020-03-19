@@ -88,7 +88,7 @@ export default YourComponent;
 ### 5. Custom styles
 
 ```css 
-
+/* custom-form-styles.css */
 .custom-form {
   background-color: #eee;
 }
@@ -99,6 +99,7 @@ export default YourComponent;
 }
 
 ```
+<br/>
 
 ```jsx
 

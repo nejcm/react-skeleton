@@ -12,7 +12,7 @@ test('renders card with props', () => {
       maxWidth={300}
       image={false}
       title={true}
-      paragraph={false}
+      paragraph={true}
       skeletonProps={{active: false}}
     />,
   );
@@ -24,6 +24,22 @@ test('renders card with props', () => {
   expect(element).toHaveClass(className);
   expect(container.querySelector('.s-image')).toBeNull();
   expect(container.querySelector('.s-title')).not.toBeNull();
+  expect(container.querySelector('.s-line')).not.toBeNull();
+});
+
+test('renders card with props', () => {
+  const {container} = render(
+    <Card
+      width="50%"
+      maxWidth={250}
+      image={true}
+      title={false}
+      paragraph={false}
+      skeletonProps={{active: false}}
+    />,
+  );
+  expect(container.querySelector('.s-image')).not.toBeNull();
+  expect(container.querySelector('.s-title')).toBeNull();
   expect(container.querySelector('.s-line')).toBeNull();
 });
 
