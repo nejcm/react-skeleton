@@ -19,7 +19,7 @@ jobs:
       #if: branch in (master, develop)
       node_js: lts/*
       env:
-        - TEST=test
+        - NODE_ENV=test
       script:
         - npm run validate
       after_success:
@@ -30,6 +30,8 @@ jobs:
       # if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
       if: branch = master
       node_js: lts/*
+      env:
+        - NODE_ENV=production
       script:
         - npm run build
       after_success:
@@ -39,11 +41,14 @@ jobs:
     - stage: deploy
       if: branch = master
       node_js: lts/*
+      env:
+        - NODE_ENV=production
       script:
         - echo "Deploying to github pages ..."
         - npm run storybook:build
       deploy:
         provider: pages
+        local_dir: .storybook-static
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         keep_history: true

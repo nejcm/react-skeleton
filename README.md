@@ -82,9 +82,9 @@ import Skeleton, { Card, Form } from '@nejcm/react-skeleton';
 
 ```
 
-## Docs
+## Docs & Examples
 
-> [**Docs**][docs-link]
+> [**Docs & Examples**][docs-link]
 
 
 ## Issues
