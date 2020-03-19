@@ -18,13 +18,13 @@ export const Wrapper = styled.table`
 
       > span {
         padding: 0 0.5rem;
-        color: #555;
       }
     }
   }
 
   td {
     .s-cell {
+      display: flex;
       height: 1.25rem;
     }
   }

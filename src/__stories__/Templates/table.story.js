@@ -14,7 +14,7 @@ const story = () => {
     <div>
       <Table head={head} rows={parseInt(rows, 10)} cols={parseInt(cols, 10)} />
       <br /><br />
-      <Table rows={6} cols={['#Id', 'Title', 'Description', 'Status', 'Action']} />
+      <Table rows={6} cols={['#Id', 'Title', 'Description', 'Status', <u><i>Action</i></u>]} />
     </div>
   );
 };

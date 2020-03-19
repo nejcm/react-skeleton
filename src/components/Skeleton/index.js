@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {measure2Css} from '../../helpers';
-import {SkeletonWrapper} from './styles';
+import {SkeletonChild, SkeletonWrapper} from './styles';
 
 const extractPropStyles = ({
   width,
@@ -30,9 +30,9 @@ const extractPropStyles = ({
 const Skeleton = ({active = true, children, darkTheme, className, ...rest}) => {
   return (
     <SkeletonWrapper
-      className={`${className || ''}${active ? ' s-active' : ' s-inactive'}${
-        darkTheme ? ' s-dark' : ''
-      }`}
+      className={`skeleton ${className || ''}${
+        active ? ' s-active' : ' s-inactive'
+      }${darkTheme ? ' s-dark' : ''}`}
       {...rest}
     >
       {children}
@@ -43,26 +43,26 @@ const Skeleton = ({active = true, children, darkTheme, className, ...rest}) => {
 const Rectangle = ({children, className, ...rest}) => {
   const {style, props} = extractPropStyles(rest);
   return (
-    <div
+    <SkeletonChild
       className={`s-rect s-loader ${className || ''}`}
       style={style}
       {...props}
     >
       {children}
-    </div>
+    </SkeletonChild>
   );
 };
 
 const Circle = ({children, className, ...rest}) => {
   const {style, props} = extractPropStyles(rest);
   return (
-    <div
+    <SkeletonChild
       className={`s-circ s-loader ${className || ''}`}
       style={style}
       {...props}
     >
       {children}
-    </div>
+    </SkeletonChild>
   );
 };
 

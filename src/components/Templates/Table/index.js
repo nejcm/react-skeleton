@@ -21,7 +21,7 @@ export const Table = ({
 
   const td = colIter.map((__, j) => (
     <td key={`c-${j}`} style={isArray ? undefined : {width: widths[j % max]}}>
-      <Skeleton.Rectangle className="s-cell" />
+      <Skeleton.Rectangle as="span" width="100%" className="s-cell" />
     </td>
   ));
 
@@ -33,7 +33,7 @@ export const Table = ({
             <tr>
               {colIter.map((val, i) => (
                 <th key={i} align="left">
-                  <Skeleton.Rectangle className="s-cell">
+                  <Skeleton.Rectangle as="span" width="100%" className="s-cell">
                     <span>{val}</span>
                   </Skeleton.Rectangle>
                 </th>
@@ -56,8 +56,8 @@ Table.propTypes = {
   head: PropTypes.bool,
   rows: PropTypes.number,
   cols: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.number,
+    PropTypes.arrayOf(PropTypes.node),
   ]),
   className: PropTypes.string,
   skeletonProps: PropTypes.object,

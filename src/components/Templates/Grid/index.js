@@ -13,7 +13,7 @@ export const Grid = ({
   return (
     <Skeleton {...skeletonProps}>
       <Wrapper className={`s-grid ${className || ''}`} {...rest}>
-        {cols
+        {cols > 0
           ? [...Array(cols)].map((_, i) => (
               <div key={i}>
                 {typeof children === 'function'
@@ -31,5 +31,5 @@ Grid.propTypes = {
   cols: PropTypes.number,
   className: PropTypes.string,
   skeletonProps: PropTypes.object,
-  children: PropTypes.oneOf([PropTypes.node, PropTypes.func]),
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
 };

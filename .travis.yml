@@ -19,7 +19,7 @@ jobs:
       #if: branch in (master, develop)
       node_js: lts/*
       env:
-        - NODE_ENV=test
+        - TEST=test
       script:
         - npm run validate
       after_success:
@@ -31,7 +31,7 @@ jobs:
       if: branch = master
       node_js: lts/*
       env:
-        - NODE_ENV=production
+        - PRODUCTION=production
       script:
         - npm run build
       after_success:
@@ -42,7 +42,7 @@ jobs:
       if: branch = master
       node_js: lts/*
       env:
-        - NODE_ENV=production
+        - PRODUCTION=production
       script:
         - echo "Deploying to github pages ..."
         - npm run storybook:build

@@ -18,9 +18,17 @@ export const Comment = ({
       <Wrapper className={`s-comment ${className || ''}`} {...rest}>
         <div>
           {avatarCircle ? (
-            <Skeleton.Circle width={avatarSize} height={avatarSize} />
+            <Skeleton.Circle
+              className="s-avatar"
+              width={avatarSize}
+              height={avatarSize}
+            />
           ) : (
-            <Skeleton.Rectangle width={avatarSize} height={avatarSize} />
+            <Skeleton.Rectangle
+              className="s-avatar"
+              width={avatarSize}
+              height={avatarSize}
+            />
           )}
         </div>
         <div>

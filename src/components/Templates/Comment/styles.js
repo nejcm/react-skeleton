@@ -7,12 +7,12 @@ export const Wrapper = styled.div`
   > * {
     display: table-cell;
 
-    &:first-child {
+    &:first-of-type {
       padding-right: 1.5rem;
       vertical-align: top;
     }
 
-    &:last-child {
+    &:last-of-type {
       width: 100%;
       vertical-align: middle;
     }
