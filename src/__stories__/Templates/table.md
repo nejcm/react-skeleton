@@ -49,7 +49,7 @@ export default YourComponent;
     </tr>
     <tr>
       <td>cols</td>
-      <td>number | array(node)</td>
+      <td>number | array< ReactNode >)</td>
       <td>false</td>
       <td>4</td>
       <td>Number of columns or array of column names / elements that can be rendered.</td>
@@ -59,11 +59,11 @@ export default YourComponent;
       <td>object</td>
       <td>false</td>
       <td></td>
-      <td>Skeletop element props.</td>
+      <td>Skeletop element props. Check skeleton docs for more info.</td>
     </tr>
     <tr>
       <td>children</td>
-      <td>node</td>
+      <td>ReactNode</td>
       <td>false</td>
       <td></td>
       <td>Show children below the table.</td>

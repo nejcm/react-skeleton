@@ -49,7 +49,7 @@ export default YourComponent;
     </tr>
     <tr>
       <td>widths</td>
-      <td>array(string | number)</td>
+      <td>array< string | number ></td>
       <td>false</td>
       <td>['100%', '100%', '75%', '35%', '50%', '85%']</td>
       <td>Lines widths loop.</td>
@@ -59,11 +59,11 @@ export default YourComponent;
       <td>object</td>
       <td>false</td>
       <td></td>
-      <td>Skeletop element props.</td>
+      <td>Skeletop element props. Check skeleton docs for more info.</td>
     </tr>
     <tr>
       <td>children</td>
-      <td>node</td>
+      <td>ReactNode</td>
       <td>false</td>
       <td></td>
       <td>Show children inside the paragraph.</td>

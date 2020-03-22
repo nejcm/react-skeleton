@@ -73,11 +73,11 @@ export default YourComponent;
       <td>object</td>
       <td>false</td>
       <td></td>
-      <td>Skeletop element props.</td>
+      <td>Skeletop element props. Check skeleton docs for more info.</td>
     </tr>
     <tr>
       <td>children</td>
-      <td>node</td>
+      <td>ReactNode</td>
       <td>false</td>
       <td></td>
       <td>Show children inside the card.</td>

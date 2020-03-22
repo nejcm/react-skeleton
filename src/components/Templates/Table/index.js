@@ -33,9 +33,15 @@ export const Table = ({
             <tr>
               {colIter.map((val, i) => (
                 <th key={i} align="left">
-                  <Skeleton.Rectangle as="span" width="100%" className="s-cell">
-                    <span>{val}</span>
-                  </Skeleton.Rectangle>
+                  {val ? (
+                    val
+                  ) : (
+                    <Skeleton.Rectangle
+                      as="span"
+                      width="100%"
+                      className="s-cell"
+                    />
+                  )}
                 </th>
               ))}
             </tr>

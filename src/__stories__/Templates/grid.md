@@ -31,7 +31,7 @@ import {Grid, Card} from '@nejcm/react-skeleton';
 // Show title only in second column
 const YourComponent = () => {
   return <Grid cols={3}>
-    {({index}) => (
+    {(index) => (
       <Card image title={(index === 1)} />
     )}
   </Grid>;
@@ -67,11 +67,11 @@ export default YourComponent;
       <td>object</td>
       <td>false</td>
       <td></td>
-      <td>Skeletop element props.</td>
+      <td>Skeletop element props. Check skeleton docs for more info.</td>
     </tr>
     <tr>
       <td>children</td>
-      <td>node | function</td>
+      <td>ReactNode | Function(index)</td>
       <td>false</td>
       <td></td>
       <td>Element to repeat inside grid columns.</td>

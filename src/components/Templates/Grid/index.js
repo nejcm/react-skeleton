@@ -16,9 +16,7 @@ export const Grid = ({
         {cols > 0
           ? [...Array(cols)].map((_, i) => (
               <div key={i}>
-                {typeof children === 'function'
-                  ? children({index: i})
-                  : children}
+                {typeof children === 'function' ? children(i) : children}
               </div>
             ))
           : null}

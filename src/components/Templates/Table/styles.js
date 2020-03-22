@@ -13,12 +13,7 @@ export const Wrapper = styled.table`
   th {
     .s-cell {
       display: flex;
-      align-items: center;
       height: 2rem;
-
-      > span {
-        padding: 0 0.5rem;
-      }
     }
   }
 

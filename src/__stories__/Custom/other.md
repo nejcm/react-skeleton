@@ -76,7 +76,7 @@ import Skeleton, {Grid, Paragraph} from '@nejcm/react-skeleton';
 
 const YourComponent = () => {
   return <Grid cols={4}>
-    {({index}) => (<Paragraph title={index === 1 || index === 2} lines={5} />)}
+    {(index) => (<Paragraph title={index === 1 || index === 2} lines={5} />)}
   </Grid>;
 };
 

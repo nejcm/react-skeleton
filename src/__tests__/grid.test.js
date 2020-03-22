@@ -43,7 +43,7 @@ test('renders grid with render props children', () => {
   const className = 'custom-element';
   const {getByTestId} = render(
     <Grid cols={amount} data-testid="target">
-      {({index}) => <Skeleton.Rectangle className={className} key={index} />}
+      {(index) => <Skeleton.Rectangle className={className} key={index} />}
     </Grid>,
   );
   const element = getByTestId('target');
