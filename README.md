@@ -41,9 +41,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting started](#-getting-started)
+- [Getting started](#getting-started)
 - [Installation](#installation)
-- [Docs](#docs)
+- [Docs & Examples](#docs--examples)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
   - [💡 Feature Requests](#-feature-requests)
@@ -78,9 +78,10 @@ $ npm install --save @nejcm/react-skeleton
 
 ```jsx
 
-import Skeleton, { Card, Form } from '@nejcm/react-skeleton';
+import Skeleton, { Card, Grid } from '@nejcm/react-skeleton';
 
 ```
+
 
 ## Docs & Examples
 
