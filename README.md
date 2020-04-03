@@ -1,6 +1,4 @@
-<div>
-
-<h1>React skeleton</h1>
+# React skeleton
 <blockquote>React skeleton loader</blockquote>
 <br />
 
@@ -12,10 +10,8 @@
     src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1fa79.png?119038208"
   />
 </a>
-
 <br />
 <br />
-</div>
 
 <!-- prettier-ignore-start -->
 [![NPM][npm-badge]][npm-link] 
