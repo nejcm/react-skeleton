@@ -1,5 +1,5 @@
 # React skeleton
-<blockquote>React skeleton loader</blockquote>
+<blockquote>React skeleton loader.</blockquote>
 <br />
 
 <a href="https://www.joypixels.com/profiles/emoji/adhesive-bandage">
@@ -37,7 +37,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting started](#getting-started)
 - [Installation](#installation)
 - [Docs & Examples](#docs--examples)
 - [Issues](#issues)
@@ -51,18 +50,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Getting Started
-
-React skeleton loader.
-
-### Built With
-
-- Love :heart:
-
-### Prerequisites
-
-- React >= 16
-- Node.js >=8
 
 ## Installation
 
@@ -82,6 +69,8 @@ import Skeleton, { Card, Grid } from '@nejcm/react-skeleton';
 ## Docs & Examples
 
 > [**Docs & Examples**][docs-link]
+
+![Screenshot][screenshot]
 
 
 ## Issues
@@ -186,9 +175,10 @@ Reach out to us at one of the following places:
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
 [requests]: https://github.com/nejcm/react-skeleton/issues?q=is%3Aissue+sort%3Areactions-%2B1-desc+label%3Aenhancement+is%3Aopen
+[screenshot]: https://github.com/nejcm/react-skeleton/blob/master/screenshot.png
 [semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release]: https://github.com/semantic-release/semantic-release
-[storybook-badge]: https://nejcmursic.netlify.com/storybook.svg
+[storybook-badge]: https://nejcmursic.netlify.com/assets/storybook.svg
 [storybook]: https://storybook.js.org/
 [style-guide-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-guide]: https://standardjs.com

@@ -12,7 +12,7 @@ describe('Paragraph', () => {
         className={className}
         id={id}
         data-testid="target"
-        title={false}
+        header={false}
         skeletonProps={{darkTheme: true}}
       />,
     );

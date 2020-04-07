@@ -12,7 +12,7 @@ describe('Card', () => {
         width="50%"
         maxWidth={300}
         image={false}
-        title={true}
+        header={true}
         paragraph={true}
         skeletonProps={{active: false}}
       />,
@@ -34,7 +34,7 @@ describe('Card', () => {
         width="50%"
         maxWidth={250}
         image={true}
-        title={false}
+        header={false}
         paragraph={false}
         skeletonProps={{active: false}}
       />,

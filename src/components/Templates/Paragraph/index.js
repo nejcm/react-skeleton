@@ -4,7 +4,7 @@ import Skeleton from '../../Skeleton';
 import {Wrapper} from './styles';
 
 export const Paragraph = ({
-  title,
+  header,
   lines = 3,
   widths = ['100%', '100%', '75%', '35%', '50%', '85%'],
   skeletonProps,
@@ -16,7 +16,7 @@ export const Paragraph = ({
   return (
     <Skeleton {...skeletonProps}>
       <Wrapper className={`s-paragraph ${className || ''}`} {...rest}>
-        {title && <Skeleton.Rectangle className="s-title" width="50%" />}
+        {header && <Skeleton.Rectangle className="s-title" width="50%" />}
         {lines > 0
           ? [...Array(lines)].map((_, i) => (
               <Skeleton.Rectangle
@@ -33,7 +33,7 @@ export const Paragraph = ({
 };
 
 Paragraph.propTypes = {
-  title: PropTypes.bool,
+  header: PropTypes.bool,
   lines: PropTypes.number,
   widths: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

@@ -8,11 +8,11 @@ const story = () => {
 
   const width = text('Width', '100%');
   const image = boolean('Show image', true);
-  const title = boolean('Show title', true);
+  const header = boolean('Show header', true);
   const paragraph = boolean('Show paragraph', true);
 
   return (
-    <Card width={width} image={image} title={title} paragraph={paragraph} />
+    <Card width={width} image={image} header={header} paragraph={paragraph} />
   );
 };
 

@@ -9,7 +9,7 @@ export const Card = ({
   width,
   maxWidth,
   image,
-  title,
+  header,
   paragraph,
   skeletonProps,
   className,
@@ -30,9 +30,9 @@ export const Card = ({
         {...rest}
       >
         {image ? <Skeleton.Rectangle className="s-image" height={200} /> : null}
-        {title || paragraph ? (
+        {header || paragraph ? (
           <Paragraph
-            title={title}
+            header={header}
             lines={paragraph ? 3 : 0}
             skeletonProps={skeletonProps}
           />
@@ -47,7 +47,7 @@ Card.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   maxWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   image: PropTypes.bool,
-  title: PropTypes.bool,
+  header: PropTypes.bool,
   paragraph: PropTypes.bool,
   className: PropTypes.string,
   skeletonProps: PropTypes.object,

@@ -6,11 +6,11 @@ import markdown from './paragraph.md';
 
 const story = () => {
 
-  const title = boolean('Show title', true);
+  const header = boolean('Show header', true);
   const lines = number('Number of lines', 3);
 
   return (
-    <Paragraph title={title} lines={lines} />
+    <Paragraph header={header} lines={lines} />
   );
 };
 
