@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/nejcm/react-skeleton/compare/v1.0.2...v2.0.0) (2020-04-07)
+
+
+### Features
+
+* added types ([669644c](https://github.com/nejcm/react-skeleton/commit/669644cf923356b719fd56fa40b990f1e68d5977))
+
+
+### BREAKING CHANGES
+
+* Renamed title prop to header
+
 ## [1.0.2](https://github.com/nejcm/react-skeleton/compare/v1.0.1...v1.0.2) (2020-03-19)
 
 
