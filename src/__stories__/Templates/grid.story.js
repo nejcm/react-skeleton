@@ -12,7 +12,7 @@ const story = () => {
     <>
       <div style={{padding: '1rem'}}>
         <Grid cols={cols}>
-          <Card title paragraph />
+          <Card header paragraph />
         </Grid>
       </div>
       <div style={{padding: '1rem'}}>

@@ -19,7 +19,7 @@ describe('Paragraph', () => {
     const element = getByTestId('target');
     expect(element).toHaveClass(className);
     expect(element).toHaveAttribute('id', id);
-    expect(container.querySelector('.s-title')).toBeNull();
+    expect(container.querySelector('.s-header')).toBeNull();
   });
 
   test('renders paragraph with different widths', () => {

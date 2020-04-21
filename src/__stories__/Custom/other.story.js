@@ -41,7 +41,7 @@ const story = () => {
       <h3>4. Grid with custom elements</h3>
       <div style={{padding: 15}}>
         <Grid cols={4}>
-          {(index) => (<Paragraph title={index === 1 || index === 2} lines={5} />)}
+          {(index) => (<Paragraph header={index === 1 || index === 2} lines={5} />)}
         </Grid>
       </div>
 

@@ -12,7 +12,7 @@ import React from 'react';
 import {Card} from '@nejcm/react-skeleton';
 
 const YourComponent = () => {
-  return <Card image title />;
+  return <Card image header />;
 };
 
 export default YourComponent;
@@ -55,11 +55,11 @@ export default YourComponent;
       <td>Show the image.</td>
     </tr>
     <tr>
-      <td>title</td>
+      <td>header</td>
       <td>boolean</td>
       <td>false</td>
       <td>false</td>
-      <td>Show the title.</td>
+      <td>Show the header.</td>
     </tr>
     <tr>
       <td>paragraph</td>

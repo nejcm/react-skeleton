@@ -32,7 +32,7 @@ export const Comment = ({
           )}
         </div>
         <div>
-          <Paragraph title={false} lines={lines} />
+          <Paragraph header={false} lines={lines} />
           {children}
         </div>
       </Wrapper>

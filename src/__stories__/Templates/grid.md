@@ -28,11 +28,11 @@ export default YourComponent;
 import React from 'react';
 import {Grid, Card} from '@nejcm/react-skeleton';
 
-// Show title only in second column
+// Show header only in second column
 const YourComponent = () => {
   return <Grid cols={3}>
     {(index) => (
-      <Card image title={(index === 1)} />
+      <Card image header={(index === 1)} />
     )}
   </Grid>;
 };

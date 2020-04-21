@@ -34,11 +34,11 @@ export default YourComponent;
   </thead>
   <tbody>
     <tr>
-      <td>title</td>
+      <td>header</td>
       <td>boolean</td>
       <td>false</td>
       <td>false</td>
-      <td>Show the title.</td>
+      <td>Show the header.</td>
     </tr>
     <tr>
       <td>lines</td>

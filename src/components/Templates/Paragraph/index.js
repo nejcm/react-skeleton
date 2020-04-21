@@ -16,7 +16,7 @@ export const Paragraph = ({
   return (
     <Skeleton {...skeletonProps}>
       <Wrapper className={`s-paragraph ${className || ''}`} {...rest}>
-        {header && <Skeleton.Rectangle className="s-title" width="50%" />}
+        {header && <Skeleton.Rectangle className="s-header" width="50%" />}
         {lines > 0
           ? [...Array(lines)].map((_, i) => (
               <Skeleton.Rectangle

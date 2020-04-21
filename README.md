@@ -1,16 +1,5 @@
-# React skeleton
-<blockquote>React skeleton loader.</blockquote>
-<br />
-
-<a href="https://www.joypixels.com/profiles/emoji/adhesive-bandage">
-  <img
-    height="128"
-    width="128"
-    alt="patch"
-    src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1fa79.png?119038208"
-  />
-</a>
-<br />
+# ⌛ React skeleton
+<blockquote>React skeleton loader that allows customization with some predefined templates.</blockquote>
 <br />
 
 <!-- prettier-ignore-start -->

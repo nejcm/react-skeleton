@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Wrapper = styled.div`
-  .s-title {
+  .s-header {
     height: 2rem;
     margin-bottom: 1.25rem;
   }

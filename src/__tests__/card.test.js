@@ -24,7 +24,7 @@ describe('Card', () => {
     });
     expect(element).toHaveClass(className);
     expect(container.querySelector('.s-image')).toBeNull();
-    expect(container.querySelector('.s-title')).not.toBeNull();
+    expect(container.querySelector('.s-header')).not.toBeNull();
     expect(container.querySelector('.s-line')).not.toBeNull();
   });
 
@@ -40,7 +40,7 @@ describe('Card', () => {
       />,
     );
     expect(container.querySelector('.s-image')).not.toBeNull();
-    expect(container.querySelector('.s-title')).toBeNull();
+    expect(container.querySelector('.s-header')).toBeNull();
     expect(container.querySelector('.s-line')).toBeNull();
   });
 
