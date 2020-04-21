@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/nejcm/react-skeleton/compare/v2.0.0...v2.0.1) (2020-04-21)
+
+
+### Bug Fixes
+
+* fixed build and replaced rollup config with kcd-scripts, fixed className bug ([de3b5f2](https://github.com/nejcm/react-skeleton/commit/de3b5f27bd4c740c18bb99f96b62bd7650498f0b))
+* fixed travis build - missing dep ([e8eca5f](https://github.com/nejcm/react-skeleton/commit/e8eca5f657f2123e089cc8aa86677787e0ea5196))
+
 # [2.0.0](https://github.com/nejcm/react-skeleton/compare/v1.0.2...v2.0.0) (2020-04-07)
 
 
