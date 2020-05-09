@@ -5,6 +5,5 @@ preact/
 package-lock.json
 package.json
 docs/
-**/__stories__/
 README.md
 *.config.js

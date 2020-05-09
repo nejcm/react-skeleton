@@ -5,14 +5,14 @@
     "gzipped": 3121
   },
   "dist\\@nejcm\\react-skeleton.umd.min.js": {
-    "bundled": 21556,
-    "minified": 11043,
-    "gzipped": 3277
+    "bundled": 70129,
+    "minified": 33206,
+    "gzipped": 11870
   },
   "dist\\@nejcm\\react-skeleton.umd.js": {
-    "bundled": 24476,
-    "minified": 12736,
-    "gzipped": 3577
+    "bundled": 83570,
+    "minified": 40938,
+    "gzipped": 14491
   },
   "dist\\@nejcm\\react-skeleton.esm.js": {
     "bundled": 19887,
