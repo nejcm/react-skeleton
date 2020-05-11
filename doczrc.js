@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/extensions
-import pkg from './package.json';
-const name = pkg.name;
+const name = 'react-skeleton';
 
 export default {
   lang: 'en',
