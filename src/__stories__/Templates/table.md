@@ -61,7 +61,7 @@ export default YourComponent;
     </tr>
     <tr>
       <td>cols</td>
-      <td>number | array< ReactNode ></td>
+      <td>number | array&lt; ReactNode &gt;</td>
       <td>false</td>
       <td>4</td>
       <td>Number of columns or array of column names / elements that can be rendered.</td>

@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/extensions
 import pkg from './package.json';
-const libName = pkg.name;
+const name = pkg.name;
 
 export default {
   lang: 'en',
@@ -14,8 +14,8 @@ export default {
     'contributing.md',
     'license.md',
   ],
-  title: libName,
-  base: `/${libName}/`,
+  title: name,
+  base: `/${name}/`,
   description: 'Documentation on react-skeleton loader',
   favicon: './assets/favicon.png',
   menu: [

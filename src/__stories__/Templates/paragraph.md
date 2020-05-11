@@ -7,7 +7,6 @@
 ## Usage
 
 ```jsx
-
 import React from 'react';
 import {Paragraph} from '@nejcm/react-skeleton';
 
@@ -16,8 +15,8 @@ const YourComponent = () => {
 };
 
 export default YourComponent;
-
 ```
+
 <br/>
 
 ## Prop types
@@ -49,7 +48,7 @@ export default YourComponent;
     </tr>
     <tr>
       <td>widths</td>
-      <td>array< string | number ></td>
+      <td>array&lt; string | number &gt;</td>
       <td>false</td>
       <td>['100%', '100%', '75%', '35%', '50%', '85%']</td>
       <td>Lines widths loop.</td>

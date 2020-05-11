@@ -1,30 +1,30 @@
 {
   "dist\\@nejcm\\react-skeleton.cjs.js": {
-    "bundled": 20686,
-    "minified": 14580,
-    "gzipped": 3121
+    "bundled": 22820,
+    "minified": 14634,
+    "gzipped": 3091
   },
   "dist\\@nejcm\\react-skeleton.umd.min.js": {
-    "bundled": 70129,
-    "minified": 33206,
-    "gzipped": 11870
+    "bundled": 21905,
+    "minified": 11012,
+    "gzipped": 3249
   },
   "dist\\@nejcm\\react-skeleton.umd.js": {
-    "bundled": 83570,
-    "minified": 40938,
-    "gzipped": 14491
+    "bundled": 26755,
+    "minified": 12702,
+    "gzipped": 3533
   },
   "dist\\@nejcm\\react-skeleton.esm.js": {
-    "bundled": 19887,
-    "minified": 13878,
-    "gzipped": 3015,
+    "bundled": 22021,
+    "minified": 13928,
+    "gzipped": 2983,
     "treeshaked": {
       "rollup": {
-        "code": 3225,
+        "code": 3295,
         "import_statements": 313
       },
       "webpack": {
-        "code": 6174
+        "code": 6112
       }
     }
   }
