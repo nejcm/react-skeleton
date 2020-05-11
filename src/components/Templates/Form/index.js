@@ -41,14 +41,38 @@ export const Form = ({
 };
 
 Form.propTypes = {
+  /**
+   * Show input label loader "true"
+   */
   label: PropTypes.bool,
+  /**
+   * Show button loader "true"
+   */
   button: PropTypes.bool,
+  /**
+   * Number of inputs "3"
+   */
   inputs: PropTypes.number,
+  /**
+   * Input height
+   */
   inputHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Array of rotating input widths. "['100%']"
+   */
   widths: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   ),
-  className: PropTypes.string,
+  /**
+   * Skeleton component props
+   */
   skeletonProps: PropTypes.object,
+  className: PropTypes.string,
   children: PropTypes.node,
 };
+/*Form.defaultProps = {
+  inputs: 3,
+  button: true,
+  label: true,
+  widths: ['100%'],
+};*/

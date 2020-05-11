@@ -5,6 +5,7 @@ const ignores = [
   '/__tests__/helpers/',
   '/__tests__/utils/',
   '__mocks__',
+  '__docs__',
 ];
 
 module.exports = {

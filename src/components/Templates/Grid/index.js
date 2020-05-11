@@ -26,8 +26,20 @@ export const Grid = ({
 };
 
 Grid.propTypes = {
+  /**
+   * Number of repeated columns "3"
+   */
   cols: PropTypes.number,
-  className: PropTypes.string,
+  /**
+   * Skeleton component props
+   */
   skeletonProps: PropTypes.object,
+  /**
+   * Children to repeat or callback function with index argument
+   */
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  className: PropTypes.string,
 };
+/*Grid.defaultProps = {
+  cols: 3,
+};*/

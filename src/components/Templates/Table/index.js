@@ -3,12 +3,11 @@ import React from 'react';
 import Skeleton from '../../Skeleton';
 import {Wrapper} from './styles';
 
-const widths = ['45px', '175px', '100px', '100px', '75px'];
-
 export const Table = ({
   head = true,
   rows = 3,
   cols = 4,
+  widths = ['100%', '100%', '75%', '35%', '50%', '85%'],
   skeletonProps,
   className,
   children,
@@ -59,13 +58,37 @@ export const Table = ({
 };
 
 Table.propTypes = {
+  /**
+   * Show table head (th) "true"
+   */
   head: PropTypes.bool,
+  /**
+   * Number of rows "3"
+   */
   rows: PropTypes.number,
+  /**
+   * Number or columns or array of custom elements "4"
+   */
   cols: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.arrayOf(PropTypes.node),
   ]),
-  className: PropTypes.string,
+  /**
+   * Array of rotating column widths. "['100%', '100%', '75%', '35%', '50%', '85%']"
+   */
+  widths: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  ),
+  /**
+   * Skeleton component props
+   */
   skeletonProps: PropTypes.object,
+  className: PropTypes.string,
   children: PropTypes.node,
 };
+/*Table.defaultProps = {
+  head: true,
+  rows: 3,
+  cols: 4,
+  widths: ['100%', '100%', '75%', '35%', '50%', '85%'],
+};*/

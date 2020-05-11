@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
 
-export const SkeletonChild = styled.div``;
-
 export const SkeletonWrapper = styled.div`
   .s-loader {
     position: relative;

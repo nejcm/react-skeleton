@@ -35,11 +35,11 @@
     "types"
   ],
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o .storybook-static",
-    "storybook:deploy": "npm run storybook:build && gh-pages -d .storybook-static",
+    "docz:dev": "docz dev",
+    "docz:build": "npm run clean && docz build",
+    "docz:serve": "docz build && docz serve",
     "format": "prettier ./src/**/*.js --write",
-    "clean": "rimraf dist coverage .storybook-static",
+    "clean": "rimraf dist coverage .docz",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "npm run lint && jest",
@@ -49,7 +49,8 @@
     "build": "npm run clean && kcd-scripts build --bundle --no-clean --size-snapshot",
     "validate": "npm run format && npm run lint && npm run test:build",
     "setup": "npm install && npm run validate",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "husky": {
     "hooks": {
@@ -57,14 +58,13 @@
     }
   },
   "peerDependencies": {
-    "prop-types": ">=14",
+    "@emotion/styled": ">=10",
+    "prop-types": ">=15",
     "react": ">=16.8",
     "react-dom": ">=16.8"
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.6",
-    "prop-types": "^15.7.2",
-    "@emotion/styled": "^10.0.27"
+    "@babel/runtime": "^7.9.6"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.9.6",
@@ -78,7 +78,6 @@
     "@semantic-release/github": "^7.0.5",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -101,8 +100,11 @@
     "codecov": "^3.6.5",
     "cpy-cli": "^3.1.1",
     "cross-env": "^7.0.2",
+    "docz": "2.3.1",
+    "docz-theme-default": "^1.2.0",
+    "dotenv": "^8.2.0",
     "eslint": "^7.0.0",
-    "eslint-config-kentcdodds": "^14.11.0",
+    "eslint-config-kentcdodds": "^14.12.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-flowtype": "^4.7.0",
@@ -132,7 +134,7 @@
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.8.2",
+    "rollup": "^2.9.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-sass": "^1.2.2",
@@ -141,7 +143,8 @@
     "serve": "^11.3.0",
     "start-server-and-test": "^1.11.0",
     "style-loader": "^1.2.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack-merge": "^4.2.2"
   },
   "browserslist": [
     "last 2 version",

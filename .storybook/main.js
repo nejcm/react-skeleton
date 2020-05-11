@@ -16,7 +16,6 @@ module.exports = {
     '@storybook/addon-options/register',
     '@storybook/addon-knobs/register',
     '@storybook/addon-notes/register-panel',
-    '@storybook/addon-actions/register',
   ],
   webpackFinal: async (config, {configType}) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'

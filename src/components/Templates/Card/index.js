@@ -44,13 +44,36 @@ export const Card = ({
 };
 
 Card.propTypes = {
+  /**
+   * Card width
+   */
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Card max width
+   */
   maxWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Display image loader "false"
+   */
   image: PropTypes.bool,
+  /**
+   * Display header loader "false"
+   */
   header: PropTypes.bool,
+  /**
+   * Display paragraph loader "false"
+   */
   paragraph: PropTypes.bool,
-  className: PropTypes.string,
+  /**
+   * Skeleton component props
+   */
   skeletonProps: PropTypes.object,
+  className: PropTypes.string,
   children: PropTypes.node,
   style: PropTypes.object,
 };
+/*Card.defaultProps = {
+  image: false,
+  header: false,
+  paragraph: false,
+};*/

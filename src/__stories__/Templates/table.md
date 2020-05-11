@@ -7,17 +7,29 @@
 ## Usage
 
 ```jsx
-
 import React from 'react';
 import {Table} from '@nejcm/react-skeleton';
 
 const YourComponent = () => {
-  return <Table rows={3} cols={['#Id', 'Title', 'Description', 'Status', <u><i>Action</i></u>]} />;
+  return (
+    <Table
+      rows={3}
+      cols={[
+        '#Id',
+        'Title',
+        'Description',
+        'Status',
+        <u>
+          <i>Action</i>
+        </u>,
+      ]}
+    />
+  );
 };
 
 export default YourComponent;
-
 ```
+
 <br/>
 
 ## Prop types
@@ -49,7 +61,7 @@ export default YourComponent;
     </tr>
     <tr>
       <td>cols</td>
-      <td>number | array< ReactNode >)</td>
+      <td>number | array< ReactNode ></td>
       <td>false</td>
       <td>4</td>
       <td>Number of columns or array of column names / elements that can be rendered.</td>

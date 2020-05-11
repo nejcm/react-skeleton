@@ -45,10 +45,10 @@ jobs:
         - PRODUCTION=production
       script:
         - echo "Deploying to github pages ..."
-        - npm run storybook:build
+        - npm run docz:build
       deploy:
         provider: pages
-        local_dir: .storybook-static
+        local_dir: .docz/dist
         cleanup: false
         skip_cleanup: true
         github_token: $GITHUB_TOKEN

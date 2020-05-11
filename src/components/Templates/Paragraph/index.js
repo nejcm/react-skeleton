@@ -33,12 +33,28 @@ export const Paragraph = ({
 };
 
 Paragraph.propTypes = {
+  /**
+   * Show header
+   */
   header: PropTypes.bool,
+  /**
+   * Number of pragraph lines "3"
+   */
   lines: PropTypes.number,
+  /**
+   * Array of rotating line widths. "['100%', '100%', '75%', '35%', '50%', '85%']"
+   */
   widths: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   ),
+  /**
+   * Skeleton component props
+   */
   skeletonProps: PropTypes.object,
   className: PropTypes.string,
   children: PropTypes.node,
 };
+/*Paragraph.defaultProps = {
+  widths: ['100%', '100%', '75%', '35%', '50%', '85%'],
+  lines: 3,
+};*/
