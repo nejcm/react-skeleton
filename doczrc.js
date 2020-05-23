@@ -33,7 +33,7 @@ export default {
     },
     logo: {
       src: "/public/assets/logo.svg",
-      width: "100%"
+      width: 50
     },
     menu: {
       headings: {
