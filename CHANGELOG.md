@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/nejcm/react-skeleton/compare/v2.0.1...v2.0.2) (2020-05-24)
+
+
+### Bug Fixes
+
+* fixed docs ([613d1a8](https://github.com/nejcm/react-skeleton/commit/613d1a8bd90596c6e2cf2192db68ab3e066c1412))
+
 ## [2.0.1](https://github.com/nejcm/react-skeleton/compare/v2.0.0...v2.0.1) (2020-04-21)
 
 
