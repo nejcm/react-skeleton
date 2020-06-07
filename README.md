@@ -44,6 +44,9 @@
 
 $ npm install --save @nejcm/react-skeleton
 
+# emotion
+$ npm install --save @nejcm/react-skeleton-emotion
+
 ```
 
 ```jsx

@@ -7,6 +7,8 @@ import {Hint} from '@nejcm/docz-theme-extended';
 
 # Installation
 
+React skeleton supports styled-components and emotion.
+
 ## Peer dependencies
 
 React skeleton requires the following peer dependencies to work. Make sure to
@@ -18,7 +20,11 @@ have them installed in your project.
 </Hint>
 
 ```bash
+# for styled-components
 $ npm install react@16.8.x styled-components@latest
+
+# for emotion
+$ npm install react@16.8.x @emotion/styled@latest
 ```
 
 ## Install
@@ -27,14 +33,21 @@ Install the latest version of React skeleton by running the following command in
 your project's root directory:
 
 ```bash
+# for styled-components
 $ npm install @nejcm/react-skeleton --save
+
+# for emotion
+$ npm install @nejcm/react-skeleton-emotion --save
 ```
 
 ## Use
 
 ```jsx
 import React from 'react';
+// for styled-components
 import Skeleton, {Card, Comment} from '@nejcm/react-skeleton';
+// for emotion
+import Skeleton, {Card, Comment} from '@nejcm/react-skeleton-emotion';
 
 const YourComponent = () => {
   return (

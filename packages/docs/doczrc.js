@@ -17,11 +17,15 @@ export default {
     'Introduction',
     'Getting started',
     'Installation',
+    'Skeleton',
     {
-      name: 'API',
-      menu: ['Skeleton'],
+      name: 'Templates',
     },
   ],
+  groups: {
+    '': [],
+    'API': ['Skeleton', 'Templates']
+  },
   favicon: './public/assets/favicon.png',
   htmlContext: {
     favicon: './assets/favicon.ico',
