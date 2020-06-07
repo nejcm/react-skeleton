@@ -1,0 +1,27 @@
+{
+  "name": "@nejcm/react-skeleton-docs",
+  "version": "0.0.0-semantically-released",
+  "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
+  "description": "React skeleton loader that allows customization with some predefined templates.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nejcm/react-skeleton"
+  },
+  "scripts": {
+    "docz:clean": "docz clean && rimraf .docz",
+    "docz:dev": "npm run docz:clean && docz dev",
+    "docz:build": "npm run docz:clean && docz build",
+    "docz:serve": "docz build && docz serve"
+  },
+  "devDependencies": {
+    "@nejcm/docz-theme-extended": "^1.4.2",
+    "docz": "2.3.1",
+    "gh-pages": "3.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "resolutions": {
+    "gatsby": "2.22.15"
+  }
+}

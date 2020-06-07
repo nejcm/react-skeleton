@@ -1,158 +1,33 @@
 {
   "name": "@nejcm/react-skeleton",
-  "version": "0.0.0-semantically-released",
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "React skeleton loader that allows customization with some predefined templates.",
-  "source": "src/index.js",
-  "main": "dist/@nejcm/react-skeleton.cjs.js",
-  "umd:main": "dist/@nejcm/react-skeleton.umd.js",
-  "module": "dist/@nejcm/react-skeleton.esm.js",
-  "types": "types/index.d.ts",
-  "sideEffects": false,
+  "private": true,
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nejcm/react-skeleton"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   },
-  "bugs": {
-    "url": "https://github.com/nejc/react-skeleton/issues"
-  },
-  "homepage": "https://github.com/nejcm/react-skeleton",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
-  "keywords": [
-    "js",
-    "react",
-    "skeleton",
-    "loader",
-    "loading",
-    "library"
-  ],
-  "files": [
-    "dist",
-    "types"
-  ],
   "scripts": {
-    "docz:clean": "docz clean && rimraf .docz",
-    "docz:dev": "docz clean && docz dev",
-    "docz:build": "docz clean && docz build",
-    "docz:serve": "docz build && docz serve",
-    "format": "prettier ./src/**/*.js --write",
-    "clean": "rimraf dist coverage .docz",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix",
-    "test": "npm run lint && jest",
-    "test:cov": "jest --coverage --colors && jest-coverage-badges",
-    "test:build": "jest --coverage --colors --silent && jest-coverage-badges",
-    "test:watch": "jest --watch",
-    "build": "npm run clean && kcd-scripts build --bundle --no-clean --size-snapshot",
-    "validate": "npm run format && npm run lint && npm run test:build",
-    "setup": "npm install && npm run validate",
-    "semantic-release": "semantic-release",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "docz": "yarn workspace @nejcm/react-skeleton-docs docz:build",
+    "test": "yarn workspace @nejcm/react-skeleton test",
+    "build": "yarn workspace @nejcm/react-skeleton build && yarn workspace @nejcm/react-skeleton-emotion build",
+    "semantic-release": "yarn workspace @nejcm/react-skeleton semantic-release && yarn workspace @nejcm/react-skeleton-emotion semantic-release",
+    "validate": "yarn workspace @nejcm/react-skeleton validate && yarn workspace @nejcm/react-skeleton-emotion validate",
+    "setup": "yarn install && yarn validate"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9"
+  },
+  "resolutions": {
+    "gatsby": "2.22.15"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "peerDependencies": {
-    "@emotion/styled": ">=10",
-    "prop-types": ">=15",
-    "react": ">=16.8",
-    "react-dom": ">=16.8"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.9.6"
-  },
-  "devDependencies": {
-    "@babel/compat-data": "^7.9.6",
-    "@babel/helpers": "^7.9.6",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-typescript": "^7.9.0",
-    "@emotion/styled": "^10.0.27",
-    "@nejcm/docz-theme-extended": "^1.4.1",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/github": "^7.0.6",
-    "@semantic-release/npm": "^7.0.5",
-    "@semantic-release/release-notes-generator": "^9.0.1",
-    "@storybook/addon-docs": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addon-notes": "^5.3.18",
-    "@storybook/addon-options": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/react": "^5.3.18",
-    "@testing-library/jest-dom": "^5.8.0",
-    "@testing-library/react": "^10.0.4",
-    "@testing-library/react-hooks": "^3.2.1",
-    "@testing-library/user-event": "^10.3.2",
-    "@types/jest": "^25.2.3",
-    "@types/react": "^16.9.35",
-    "autoprefixer": "^9.8.0",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-minify-dead-code-elimination": "^0.5.1",
-    "babel-plugin-no-side-effect-class-properties": "^0.0.7",
-    "babel-plugin-transform-async-to-promises": "^0.8.15",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "codecov": "^3.7.0",
-    "cpy-cli": "^3.1.1",
-    "cross-env": "^7.0.2",
-    "docz": "2.3.1",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.0.0",
-    "eslint-config-kentcdodds": "^14.12.0",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^5.1.0",
-    "eslint-plugin-html": "^6.0.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.13.1",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.2",
-    "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
-    "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "jest-coverage-badges": "^1.1.2",
-    "jest-environment-jsdom-fourteen": "^1.0.1",
-    "jest-resolve": "^26.0.1",
-    "jest-watch-typeahead": "^0.6.0",
-    "kcd-scripts": "^6.0.1",
-    "lint-staged": "^10.2.4",
-    "node-sass": "^4.14.1",
-    "postcss": "^7.0.30",
-    "prettier": "^2.0.5",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-is": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.10.5",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-sass": "^1.2.2",
-    "sass-loader": "^8.0.2",
-    "semantic-release": "^17.0.7",
-    "serve": "^11.3.0",
-    "start-server-and-test": "^1.11.0",
-    "style-loader": "^1.2.1",
-    "typescript": "^3.9.3",
-    "webpack-merge": "^4.2.2"
-  },
-  "browserslist": [
-    "last 2 version",
-    "> 1%",
-    "IE 11",
-    "safari >= 7"
-  ]
+  }
 }

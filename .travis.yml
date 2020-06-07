@@ -1,11 +1,11 @@
 language: node_js
-cache: npm
+cache: yarn
 notifications:
   email: false
 node_js:
   - lts/*
   - node
-install: npm install
+install: yarn install
 branches:
   only:
     - master
@@ -21,10 +21,10 @@ jobs:
       env:
         - TEST=test
       script:
-        - npm run validate
+        - yarn validate
       after_success:
-        - mv coverage/coverage-final.json coverage/coverage.json
-        - codecov
+        - mv packages/react-skeleton/coverage/coverage-final.json
+          packages/react-skeleton/coverage/coverage.json
 
     - stage: release
       # if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
@@ -33,10 +33,10 @@ jobs:
       env:
         - PRODUCTION=production
       script:
-        - npm run build
+        - yarn build
       after_success:
         - echo "Deploying to npm ..."
-        - npm run semantic-release
+        - yarn semantic-release
 
     - stage: deploy
       if: branch = master
@@ -45,10 +45,10 @@ jobs:
         - PRODUCTION=production
       script:
         - echo "Deploying to github pages ..."
-        - npm run docz:build
+        - yarn docz
       deploy:
         provider: pages
-        local_dir: .docz/dist
+        local_dir: packages/docs/.docz/dist
         cleanup: false
         skip_cleanup: true
         github_token: $GITHUB_TOKEN

@@ -1,0 +1,49 @@
+---
+name: Installation
+route: /installation
+---
+
+import {Hint} from '@nejcm/docz-theme-extended';
+
+# Installation
+
+## Peer dependencies
+
+React skeleton requires the following peer dependencies to work. Make sure to
+have them installed in your project.
+
+<Hint type="info">
+  You can <strong>skip this step</strong> if those packages are already
+  installed in your application.
+</Hint>
+
+```bash
+$ npm install react@16.8.x styled-components@latest
+```
+
+## Install
+
+Install the latest version of React skeleton by running the following command in
+your project's root directory:
+
+```bash
+$ npm install @nejcm/react-skeleton --save
+```
+
+## Use
+
+```jsx
+import React from 'react';
+import Skeleton, {Card, Comment} from '@nejcm/react-skeleton';
+
+const YourComponent = () => {
+  return (
+    <Skeleton>
+      <Skeleton.Rectangle height={20} />
+      <Skeleton.Circle width={40} height={40} />
+    </Skeleton>
+  );
+};
+
+export default YourComponent;
+```

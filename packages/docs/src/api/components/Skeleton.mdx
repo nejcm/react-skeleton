@@ -1,0 +1,45 @@
+---
+name: Skeleton
+menu: API
+route: /api/skeleton
+---
+
+import {Playground, Props} from 'docz';
+import Skeleton from '../../../../react-skeleton/src/components/Skeleton';
+
+# Skeleton
+
+## Specification
+
+Skeleton is the main component of the library and all skeleton loaders and
+templates are built with it. It has two compound components: `Rectangle` and
+`Circle`.
+
+## Usage
+
+<Playground>
+  <Skeleton>
+    <Skeleton.Circle width={40} height={40} />
+    <Skeleton.Rectangle height={20} />
+  </Skeleton>
+</Playground>
+
+## Props
+
+### Skeleton
+
+Skeleton supports all div html element props and:
+
+<Props of={Skeleton} table={true} />
+
+### Skeleton.Rectangle
+
+Skeleton.Rectangle supports all div html element props and:
+
+<Props of={Skeleton.Rectangle} table={true} />
+
+### Skeleton.Circle
+
+Skeleton.Circle supports all div html element props and:
+
+<Props of={Skeleton.Circle} table={true} />

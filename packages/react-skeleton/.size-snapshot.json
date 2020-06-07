@@ -1,0 +1,31 @@
+{
+  "react-skeleton.cjs.js": {
+    "bundled": 22381,
+    "minified": 14636,
+    "gzipped": 3092
+  },
+  "react-skeleton.esm.js": {
+    "bundled": 21582,
+    "minified": 13930,
+    "gzipped": 2985,
+    "treeshaked": {
+      "rollup": {
+        "code": 3297,
+        "import_statements": 315
+      },
+      "webpack": {
+        "code": 6114
+      }
+    }
+  },
+  "react-skeleton.umd.min.js": {
+    "bundled": 32863,
+    "minified": 15128,
+    "gzipped": 4606
+  },
+  "react-skeleton.umd.js": {
+    "bundled": 63110,
+    "minified": 23897,
+    "gzipped": 6996
+  }
+}

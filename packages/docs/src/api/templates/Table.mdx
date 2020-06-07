@@ -1,0 +1,37 @@
+---
+name: Table
+menu: API
+route: /api/table
+---
+
+import {Playground, Props} from 'docz';
+import {Table} from '../../../../react-skeleton/src/components/Templates/Table';
+
+# Table
+
+## Specification
+
+Table template
+
+## Usage
+
+<Playground>
+  <Table
+    rows={3}
+    cols={[
+      '#Id',
+      'Title',
+      'Description',
+      'Status',
+      <u>
+        <i>Action</i>
+      </u>,
+    ]}
+  />
+</Playground>
+
+## Props
+
+Table supports all div html element props and:
+
+<Props of={Table} table={true} />

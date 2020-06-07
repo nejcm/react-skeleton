@@ -13,8 +13,6 @@
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
-[![Storybook][storybook-badge]]([storybook])
-
 [![All Contributors][all-contributors-badge]](#contributors)
 [![PRs Welcome][prs-badge]][prs] [![Code of Conduct][coc-badge]][coc]
 
@@ -49,7 +47,10 @@ $ npm install --save @nejcm/react-skeleton
 ```
 
 ```jsx
+// With styled-components
 import Skeleton, {Card, Grid} from '@nejcm/react-skeleton';
+// With emotion
+import Skeleton, {Card, Grid} from '@nejcm/react-skeleton-emotion';
 ```
 
 ## Docs & Examples
@@ -162,8 +163,6 @@ Reach out to us at one of the following places:
 [screenshot]: https://raw.githubusercontent.com/nejcm/react-skeleton/master/screenshot.png
 [semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release]: https://github.com/semantic-release/semantic-release
-[storybook-badge]: https://nejcmursic.netlify.com/assets/storybook.svg
-[storybook]: https://storybook.js.org/
 [style-guide-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-guide]: https://standardjs.com
 [version-badge]: https://img.shields.io/npm/v/@nejcm/react-skeleton.svg

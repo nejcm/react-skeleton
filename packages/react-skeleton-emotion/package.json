@@ -1,0 +1,110 @@
+{
+  "name": "@nejcm/react-skeleton-emotion",
+  "version": "0.0.0-semantically-released",
+  "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
+  "description": "React skeleton loader that allows customization with some predefined templates.",
+  "source": "src/index.js",
+  "main": "dist/@nejcm/react-skeleton-emotion.cjs.js",
+  "umd:main": "dist/@nejcm/react-skeleton-emotion.umd.js",
+  "module": "dist/@nejcm/react-skeleton-emotion.esm.js",
+  "types": "../../types/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nejcm/react-skeleton"
+  },
+  "bugs": {
+    "url": "https://github.com/nejc/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/nejcm/react-skeleton",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "keywords": [
+    "js",
+    "react",
+    "skeleton",
+    "loader",
+    "loading",
+    "library"
+  ],
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "format": "prettier ./src/**/*.js --write",
+    "clean": "rimraf dist",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "build": "npm run clean && kcd-scripts build --bundle --no-clean --size-snapshot",
+    "validate": "npm run format && npm run lint",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "@emotion/styled": ">=10",
+    "react": ">=16.8"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/compat-data": "^7.10.1",
+    "@babel/helpers": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@babel/runtime": "^7.10.2",
+    "@emotion/styled": "10.0.27",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@types/react": "^16.9.35",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.1",
+    "babel-plugin-no-side-effect-class-properties": "^0.0.7",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-plugin-transform-rename-import": "2.3.0",
+    "cpy-cli": "^3.1.1",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-kentcdodds": "^14.13.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^5.1.3",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "kcd-scripts": "^6.2.0",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-is": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.14.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "semantic-release": "^17.0.8",
+    "serve": "^11.3.2",
+    "style-loader": "^1.2.1",
+    "typescript": "^3.9.5",
+    "webpack-merge": "^4.2.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 11",
+    "safari >= 7"
+  ]
+}
