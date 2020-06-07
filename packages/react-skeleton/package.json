@@ -7,7 +7,7 @@
   "main": "dist/@nejcm/react-skeleton.cjs.js",
   "umd:main": "dist/@nejcm/react-skeleton.umd.js",
   "module": "dist/@nejcm/react-skeleton.esm.js",
-  "types": "../../types/index.d.ts",
+  "types": "types/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -32,7 +32,7 @@
   ],
   "files": [
     "dist",
-    "types"
+    "../../types"
   ],
   "scripts": {
     "format": "prettier ./src/**/*.js --write",

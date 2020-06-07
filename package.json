@@ -10,18 +10,21 @@
     ]
   },
   "scripts": {
+    "format": "yarn workspace @nejcm/react-skeleton format && yarn workspace @nejcm/react-skeleton-emotion format",
     "docz": "yarn workspace @nejcm/react-skeleton-docs docz:build",
     "test": "yarn workspace @nejcm/react-skeleton test",
+    "lint": "yarn workspace @nejcm/react-skeleton lint && yarn workspace @nejcm/react-skeleton-emotion lint",
     "build": "yarn workspace @nejcm/react-skeleton build && yarn workspace @nejcm/react-skeleton-emotion build",
     "semantic-release": "yarn workspace @nejcm/react-skeleton semantic-release && yarn workspace @nejcm/react-skeleton-emotion semantic-release",
     "validate": "yarn workspace @nejcm/react-skeleton validate && yarn workspace @nejcm/react-skeleton-emotion validate",
     "setup": "yarn install && yarn validate"
   },
   "devDependencies": {
+    "eslint-plugin-babel": "5.3.0",
     "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
-    "eslint-plugin-babel": "5.3.0"
+    "prettier": "2.0.5"
   },
   "resolutions": {
     "gatsby": "2.22.15"
