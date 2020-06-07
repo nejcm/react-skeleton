@@ -97,6 +97,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "semantic-release": "^17.0.8",
+    "semantic-release-monorepo": "7.0.2",
     "serve": "^11.3.2",
     "style-loader": "^1.2.1",
     "typescript": "^3.9.5",

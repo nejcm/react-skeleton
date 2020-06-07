@@ -1,5 +1,4 @@
 {
-  "name": "@nejcm/react-skeleton",
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "React skeleton loader that allows customization with some predefined templates.",
   "private": true,
@@ -11,6 +10,7 @@
   },
   "scripts": {
     "format": "yarn workspace @nejcm/react-skeleton format && yarn workspace @nejcm/react-skeleton-emotion format",
+    "docz:dev": "yarn workspace @nejcm/react-skeleton-docs docz:dev",
     "docz": "yarn workspace @nejcm/react-skeleton-docs docz:build",
     "test": "yarn workspace @nejcm/react-skeleton test",
     "lint": "yarn workspace @nejcm/react-skeleton lint && yarn workspace @nejcm/react-skeleton-emotion lint",
