@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/nejcm/react-skeleton/compare/v3.0.3...v3.0.4) (2020-06-08)
+
+
+### Bug Fixes
+
+* fixed animation, fixed missing peer dependency ([b1a4af7](https://github.com/nejcm/react-skeleton/commit/b1a4af78f5a83097dae8d8ca8f98c70502823dbc))
+
 ## [3.0.3](https://github.com/nejcm/react-skeleton/compare/v3.0.2...v3.0.3) (2020-06-08)
 
 
