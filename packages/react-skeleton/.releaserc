@@ -19,6 +19,5 @@
       "@semantic-release/npm",
       "@semantic-release/git",
       "@semantic-release/github"
-    ],
-    "extends": "semantic-release-monorepo"
+    ]
 }
