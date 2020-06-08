@@ -1,3 +1,11 @@
+## [3.0.2](https://github.com/nejcm/react-skeleton/compare/v3.0.1...v3.0.2) (2020-06-08)
+
+
+### Bug Fixes
+
+* fixed missing dep. ([5dba601](https://github.com/nejcm/react-skeleton/commit/5dba60106a2363376a2783f0ba7de2198f2d84f6))
+* removed semantic-release-monorepo ([9cae3e8](https://github.com/nejcm/react-skeleton/commit/9cae3e8fb9a7b5c07c72796f40c742823c274d83))
+
 # @nejcm/react-skeleton-v1.0.0 (2020-06-08)
 
 
