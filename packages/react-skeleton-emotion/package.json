@@ -1,6 +1,6 @@
 {
   "name": "@nejcm/react-skeleton-emotion",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "React skeleton loader that allows customization with some predefined templates.",
   "source": "src/index.js",
@@ -11,6 +11,14 @@
   "private": false,
   "sideEffects": false,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nejcm/react-skeleton"
+  },
+  "bugs": {
+    "url": "https://github.com/nejc/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/nejcm/react-skeleton",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -39,6 +47,7 @@
   "peerDependencies": {
     "@babel/runtime": ">=7",
     "@emotion/styled": ">=10",
+    "@emotion/core": ">=10",
     "prop-types": ">=15",
     "react": ">=16.8",
     "react-dom": ">=16.8"
@@ -52,7 +61,8 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@emotion/styled": "10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
@@ -87,6 +97,7 @@
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.15.0",
@@ -95,13 +106,12 @@
     "semantic-release": "^17.0.8",
     "serve": "^11.3.2",
     "style-loader": "^1.2.1",
-    "typescript": "^3.9.5",
-    "webpack-merge": "^4.2.2"
+    "typescript": "^3.9.5"
   },
   "browserslist": [
     "last 2 version",
     "> 1%",
-    "IE 11",
+    "IE >= 11",
     "safari >= 7"
   ]
 }

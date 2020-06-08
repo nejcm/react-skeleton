@@ -109,6 +109,7 @@
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
@@ -120,13 +121,12 @@
     "start-server-and-test": "^1.11.0",
     "style-loader": "^1.2.1",
     "styled-components": "5.1.1",
-    "typescript": "^3.9.5",
-    "webpack-merge": "^4.2.2"
+    "typescript": "^3.9.5"
   },
   "browserslist": [
     "last 2 version",
     "> 1%",
-    "IE 11",
+    "IE >= 11",
     "safari >= 7"
   ]
 }

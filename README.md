@@ -41,20 +41,37 @@
 ## Installation
 
 ```shell
-
+# with styled-components
 $ npm install --save @nejcm/react-skeleton
-
-# emotion
+# with emotion
 $ npm install --save @nejcm/react-skeleton-emotion
-
 ```
+
+### Peer dependencies
+
+react-skeleton requires the following peer dependencies to work. Make sure to
+have them installed in your project.
+
+> You can **skip this step** if those packages are already installed in your
+> project.
+
+```shell
+# with styled-components
+$ npm install react react-dom styled-components @babel/runtime
+# with emotion
+$ npm install react react-dom @emotion/styled @emotion/core @babel/runtime
+```
+
+### Usage
 
 ```jsx
-// With styled-components
+// with styled-components
 import Skeleton, {Card, Grid} from '@nejcm/react-skeleton';
-// With emotion
+// with emotion
 import Skeleton, {Card, Grid} from '@nejcm/react-skeleton-emotion';
 ```
+
+For more examples check the docs.
 
 ## Docs & Examples
 
