@@ -33,7 +33,7 @@
   ],
   "files": [
     "dist",
-    "../../types"
+    "types"
   ],
   "scripts": {
     "format": "prettier ./src/**/*.js --write",
