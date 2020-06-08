@@ -1,3 +1,23 @@
+# @nejcm/react-skeleton-v1.0.0 (2020-06-08)
+
+
+### Bug Fixes
+
+* fixed missing babel plugin issue ([4e7830b](https://github.com/nejcm/react-skeleton/commit/4e7830bdaf9faec25fc074e9f242bac437061779))
+* fixed missing dep. ([5dba601](https://github.com/nejcm/react-skeleton/commit/5dba60106a2363376a2783f0ba7de2198f2d84f6))
+* fixed semantic release ([5893eef](https://github.com/nejcm/react-skeleton/commit/5893eef72281078289aba39a54670fb948830a96))
+* semantic-release-monorepo ([7b7e999](https://github.com/nejcm/react-skeleton/commit/7b7e99933ba7716e4b2aa7203e174a4ce6a9f364))
+
+
+### Features
+
+* added support for styled components and emotion ([a9d9df4](https://github.com/nejcm/react-skeleton/commit/a9d9df4dfe046ffeb5a0d72c3f6ba95287b2d9f5))
+
+
+### BREAKING CHANGES
+
+* Renamed packages
+
 # @nejcm/react-skeleton-v1.0.0 (2020-06-07)
 
 
