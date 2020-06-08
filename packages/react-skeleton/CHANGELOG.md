@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/nejcm/react-skeleton/compare/v3.0.2...v3.0.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* added missing types ([773276d](https://github.com/nejcm/react-skeleton/commit/773276d92bd5e058d707d2d68e02f8ea67929999))
+
 ## [3.0.2](https://github.com/nejcm/react-skeleton/compare/v3.0.1...v3.0.2) (2020-06-08)
 
 
