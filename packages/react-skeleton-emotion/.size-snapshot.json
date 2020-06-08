@@ -5,14 +5,14 @@
     "gzipped": 3091
   },
   "react-skeleton-emotion.umd.min.js": {
-    "bundled": 32863,
-    "minified": 15128,
-    "gzipped": 4608
+    "bundled": 21451,
+    "minified": 11019,
+    "gzipped": 3251
   },
   "react-skeleton-emotion.umd.js": {
-    "bundled": 63110,
-    "minified": 23897,
-    "gzipped": 6998
+    "bundled": 26301,
+    "minified": 12709,
+    "gzipped": 3535
   },
   "react-skeleton-emotion.esm.js": {
     "bundled": 21580,

@@ -1,6 +1,6 @@
 {
   "name": "@nejcm/react-skeleton-emotion",
-  "version": "0.0.0-semantically-released",
+  "version": "3.0.1",
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "React skeleton loader that allows customization with some predefined templates.",
   "source": "src/index.js",
@@ -8,16 +8,9 @@
   "umd:main": "dist/@nejcm/react-skeleton-emotion.umd.js",
   "module": "dist/@nejcm/react-skeleton-emotion.esm.js",
   "types": "types/index.d.ts",
+  "private": false,
   "sideEffects": false,
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nejcm/react-skeleton"
-  },
-  "bugs": {
-    "url": "https://github.com/nejc/react-skeleton/issues"
-  },
-  "homepage": "https://github.com/nejcm/react-skeleton",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -45,9 +38,11 @@
   },
   "peerDependencies": {
     "@emotion/styled": ">=10",
+    "prop-types": ">=15",
     "react": ">=16.8"
   },
   "dependencies": {
+    "@babel/runtime": "^7.10.2"
   },
   "devDependencies": {
     "@babel/compat-data": "^7.10.1",
@@ -55,7 +50,6 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
-    "@babel/runtime": "^7.10.2",
     "@emotion/styled": "10.0.27",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",

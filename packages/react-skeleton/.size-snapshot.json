@@ -19,13 +19,13 @@
     }
   },
   "react-skeleton.umd.min.js": {
-    "bundled": 32863,
-    "minified": 15128,
-    "gzipped": 4606
+    "bundled": 21451,
+    "minified": 11019,
+    "gzipped": 3249
   },
   "react-skeleton.umd.js": {
-    "bundled": 63110,
-    "minified": 23897,
-    "gzipped": 6996
+    "bundled": 26301,
+    "minified": 12709,
+    "gzipped": 3533
   }
 }
