@@ -12,7 +12,7 @@ describe('Card', () => {
         width="50%"
         maxWidth={300}
         image={false}
-        header={true}
+        header={false}
         paragraph={true}
         skeletonProps={{active: false}}
       />,
@@ -24,7 +24,7 @@ describe('Card', () => {
     });
     expect(element).toHaveClass(className);
     expect(container.querySelector('.s-image')).toBeNull();
-    expect(container.querySelector('.s-header')).not.toBeNull();
+    expect(container.querySelector('.s-header')).toBeNull();
     expect(container.querySelector('.s-line')).not.toBeNull();
   });
 
@@ -34,13 +34,13 @@ describe('Card', () => {
         width="50%"
         maxWidth={250}
         image={true}
-        header={false}
+        header={true}
         paragraph={false}
         skeletonProps={{active: false}}
       />,
     );
     expect(container.querySelector('.s-image')).not.toBeNull();
-    expect(container.querySelector('.s-header')).toBeNull();
+    expect(container.querySelector('.s-header')).not.toBeNull();
     expect(container.querySelector('.s-line')).toBeNull();
   });
 

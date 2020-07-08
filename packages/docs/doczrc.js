@@ -31,6 +31,10 @@ export default {
     favicon: './assets/favicon.ico',
   },
   themeConfig: {
+    search: true,
+    header: {
+      icons: 'minimal',
+    },
     footer: {
       navigation: true
     },
@@ -39,6 +43,7 @@ export default {
       width: 50
     },
     menu: {
+      search: false,
       headings: {
         rightSide: true,
         scrollspy: true,

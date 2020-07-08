@@ -1,30 +1,30 @@
 {
   "react-skeleton-emotion.cjs.js": {
-    "bundled": 22379,
-    "minified": 14634,
-    "gzipped": 3091
+    "bundled": 22410,
+    "minified": 14665,
+    "gzipped": 3102
   },
   "react-skeleton-emotion.umd.min.js": {
-    "bundled": 21451,
-    "minified": 11019,
-    "gzipped": 3251
+    "bundled": 21482,
+    "minified": 11050,
+    "gzipped": 3261
   },
   "react-skeleton-emotion.umd.js": {
-    "bundled": 26301,
-    "minified": 12709,
-    "gzipped": 3535
+    "bundled": 26332,
+    "minified": 12740,
+    "gzipped": 3545
   },
   "react-skeleton-emotion.esm.js": {
-    "bundled": 21580,
-    "minified": 13928,
-    "gzipped": 2983,
+    "bundled": 21611,
+    "minified": 13959,
+    "gzipped": 2994,
     "treeshaked": {
       "rollup": {
-        "code": 3295,
+        "code": 3326,
         "import_statements": 313
       },
       "webpack": {
-        "code": 6112
+        "code": 6143
       }
     }
   }

@@ -57,9 +57,9 @@ have them installed in your project.
 
 ```shell
 # with styled-components
-$ npm install react react-dom styled-components @babel/runtime
+$ npm install react react-dom prop-types styled-components --save
 # with emotion
-$ npm install react react-dom @emotion/styled @emotion/core @babel/runtime
+$ npm install react react-dom prop-types @emotion/styled @emotion/core --save
 ```
 
 ### Usage
