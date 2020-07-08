@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/nejcm/react-skeleton/compare/v3.0.4...v3.0.5) (2020-07-08)
+
+
+### Bug Fixes
+
+* fixed peer deps. and updated dev. deps. ([11774f0](https://github.com/nejcm/react-skeleton/commit/11774f076bf4fe19ca0aae8d27207d88a37778a7))
+
 ## [3.0.4](https://github.com/nejcm/react-skeleton/compare/v3.0.3...v3.0.4) (2020-06-08)
 
 
