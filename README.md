@@ -26,6 +26,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [Docs & Examples](#docs--examples)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
@@ -40,13 +41,6 @@
 
 ## Installation
 
-```shell
-# with styled-components
-$ npm install --save @nejcm/react-skeleton
-# with emotion
-$ npm install --save @nejcm/react-skeleton-emotion
-```
-
 ### Peer dependencies
 
 react-skeleton requires the following peer dependencies to work. Make sure to
@@ -57,12 +51,21 @@ have them installed in your project.
 
 ```shell
 # with styled-components
-$ npm install react react-dom prop-types styled-components --save
+$ npm install react react-dom styled-components --save
 # with emotion
-$ npm install react react-dom prop-types @emotion/styled @emotion/core --save
+$ npm install react react-dom @emotion/styled @emotion/core --save
 ```
 
-### Usage
+### Install
+
+```shell
+# with styled-components
+$ npm install @nejcm/react-skeleton --save
+# with emotion
+$ npm install @nejcm/react-skeleton-emotion --save
+```
+
+## Usage
 
 ```jsx
 // with styled-components
