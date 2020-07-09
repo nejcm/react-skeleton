@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/nejcm/react-skeleton/compare/v3.0.5...v3.0.6) (2020-07-08)
+
+
+### Bug Fixes
+
+* added missing docs dep.: lodash ([5b41952](https://github.com/nejcm/react-skeleton/commit/5b419529aee08167e18f12b5cc83be88c557a217))
+
 ## [3.0.5](https://github.com/nejcm/react-skeleton/compare/v3.0.4...v3.0.5) (2020-07-08)
 
 
