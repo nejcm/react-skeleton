@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/nejcm/react-skeleton/compare/v3.0.6...v3.1.0) (2020-08-05)
+
+
+### Features
+
+* **ts:** refactored lib to typescript ([2fa0cfd](https://github.com/nejcm/react-skeleton/commit/2fa0cfdb19ce1a8061fc3f26561db7a87fff944d))
+
 ## [3.0.6](https://github.com/nejcm/react-skeleton/compare/v3.0.5...v3.0.6) (2020-07-08)
 
 
