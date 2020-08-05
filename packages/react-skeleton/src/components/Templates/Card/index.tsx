@@ -1,11 +1,37 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import {measure2Css} from '../../../helpers';
-import Skeleton from '../../Skeleton';
+import Skeleton, {SkeletonProps} from '../../Skeleton';
 import {Paragraph} from '../Paragraph';
 import {Wrapper} from './styles';
 
-export const Card = ({
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Card width
+   */
+  width?: string | number;
+  /**
+   * Card max width
+   */
+  maxWidth?: string | number;
+  /**
+   * Display image loader "false"
+   */
+  image?: boolean;
+  /**
+   * Display header loader "false"
+   */
+  header?: boolean;
+  /**
+   * Display paragraph loader "false"
+   */
+  paragraph?: boolean;
+  /**
+   * Skeleton component props
+   */
+  skeletonProps?: SkeletonProps;
+}
+
+export const Card: React.SFC<CardProps> = ({
   width,
   maxWidth,
   image,
@@ -42,38 +68,3 @@ export const Card = ({
     </Skeleton>
   );
 };
-
-Card.propTypes = {
-  /**
-   * Card width
-   */
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /**
-   * Card max width
-   */
-  maxWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /**
-   * Display image loader "false"
-   */
-  image: PropTypes.bool,
-  /**
-   * Display header loader "false"
-   */
-  header: PropTypes.bool,
-  /**
-   * Display paragraph loader "false"
-   */
-  paragraph: PropTypes.bool,
-  /**
-   * Skeleton component props
-   */
-  skeletonProps: PropTypes.object,
-  className: PropTypes.string,
-  children: PropTypes.node,
-  style: PropTypes.object,
-};
-/*Card.defaultProps = {
-  image: false,
-  header: false,
-  paragraph: false,
-};*/

@@ -28,7 +28,7 @@ describe('Form', () => {
   });
 
   test('renders form with empty widths should be always 100%', () => {
-    const widths = [];
+    const widths: number[] = [];
 
     const {container} = render(<Form widths={widths} />);
     const elem = container.querySelector('.s-input');

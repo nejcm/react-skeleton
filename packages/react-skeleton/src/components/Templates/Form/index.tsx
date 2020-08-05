@@ -1,18 +1,44 @@
-import PropTypes from 'prop-types';
 import React, {Fragment} from 'react';
 import {measure2Css} from '../../../helpers';
-import Skeleton from '../../Skeleton';
+import Skeleton, {SkeletonProps} from '../../Skeleton';
 import {Wrapper} from './styles';
 
-export const Form = ({
+export interface FormProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Number of inputs "3"
+   */
+  inputs?: number;
+  /**
+   * Input height
+   */
+  inputHeight?: number;
+  /**
+   * Show button loader "true"
+   */
+  button?: boolean;
+  /**
+   * Show input label loader "true"
+   */
+  label?: boolean;
+  /**
+   * Array of rotating input widths. "['100%']"
+   */
+  widths?: (string | number)[];
+  /**
+   * Skeleton component props
+   */
+  skeletonProps?: SkeletonProps;
+}
+
+export const Form: React.SFC<FormProps> = ({
   inputs = 3,
   inputHeight,
   button = true,
   label = true,
   widths = ['100%'],
+  skeletonProps,
   className,
   children,
-  skeletonProps,
   ...rest
 }) => {
   const max = widths.length || 0;
@@ -39,40 +65,3 @@ export const Form = ({
     </Skeleton>
   );
 };
-
-Form.propTypes = {
-  /**
-   * Show input label loader "true"
-   */
-  label: PropTypes.bool,
-  /**
-   * Show button loader "true"
-   */
-  button: PropTypes.bool,
-  /**
-   * Number of inputs "3"
-   */
-  inputs: PropTypes.number,
-  /**
-   * Input height
-   */
-  inputHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /**
-   * Array of rotating input widths. "['100%']"
-   */
-  widths: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  ),
-  /**
-   * Skeleton component props
-   */
-  skeletonProps: PropTypes.object,
-  className: PropTypes.string,
-  children: PropTypes.node,
-};
-/*Form.defaultProps = {
-  inputs: 3,
-  button: true,
-  label: true,
-  widths: ['100%'],
-};*/

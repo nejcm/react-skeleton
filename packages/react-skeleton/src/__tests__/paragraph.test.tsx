@@ -34,7 +34,7 @@ describe('Paragraph', () => {
 
   test('renders paragraph with empty widths should be always 100%', () => {
     const lines = 2;
-    const widths = [];
+    const widths: number[] = [];
 
     const {container} = render(<Paragraph lines={lines} widths={widths} />);
     const line = container.querySelector('.s-line');
@@ -43,7 +43,7 @@ describe('Paragraph', () => {
 
   test('renders paragraph witout lines', () => {
     const lines = 0;
-    const widths = [];
+    const widths: number[] = [];
 
     const {container} = render(<Paragraph lines={lines} widths={widths} />);
     const line = container.querySelector('.s-line');

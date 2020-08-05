@@ -38,6 +38,7 @@ module.exports = {
   ],
   testPathIgnorePatterns: [...ignores],
   transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
     '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
     '^(?!.*\\.(js|jsx|css|json)$)': '<rootDir>/config/jest/fileTransform.js',

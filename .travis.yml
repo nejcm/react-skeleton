@@ -2,10 +2,17 @@ language: node_js
 cache: yarn
 notifications:
   email: false
+env:
+  - TEST=test
 node_js:
   - lts/*
   - node
 install: yarn install
+script:
+  - yarn validate
+after_success:
+  - mv packages/react-skeleton/coverage/coverage-final.json
+    packages/react-skeleton/coverage/coverage.json
 branches:
   only:
     - master
@@ -15,17 +22,6 @@ branches:
 
 jobs:
   include:
-    - stage: testing
-      #if: branch in (master, develop)
-      node_js: lts/*
-      env:
-        - TEST=test
-      script:
-        - yarn validate
-      after_success:
-        - mv packages/react-skeleton/coverage/coverage-final.json
-          packages/react-skeleton/coverage/coverage.json
-
     - stage: release
       # if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
       if: branch = master

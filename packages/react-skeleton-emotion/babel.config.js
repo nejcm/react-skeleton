@@ -8,6 +8,7 @@ module.exports = {
         replacement: '@emotion/styled',
       },
     ],
+    '@babel/plugin-transform-typescript',
     '@babel/plugin-transform-runtime',
     'no-side-effect-class-properties',
     [

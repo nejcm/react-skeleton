@@ -1,31 +1,36 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "react-app", "kentcdodds"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "kentcdodds",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "env": {
     "browser": true,
     "es6": true,
     "jest": true
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
     "react/jsx-boolean-value": 0,
-    "react/prop-types": 2,
+    "react/prop-types": 0,
     "react/no-adjacent-inline-elements": "off",
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 3
-      }
-    ],
-    "max-lines-per-function": ["error", 500],
-    "complexity": ["error", 15],
-    "valid-jsdoc": ["warn", {"requireReturn": false}],
+    "valid-jsdoc": ["warn"],
     "no-bitwise": "off",
     "consistent-return": "off",
     "no-negated-condition": "off",
@@ -37,10 +42,7 @@
     "no-unused-vars": "error",
     "eqeqeq": "off",
     "import/no-useless-path-segments": "off",
-    "max-lines": "off",
     "no-eq-null": "off",
-    "react/jsx-indent": "off",
-    "jsx-a11y/label-has-for": "off",
-    "jsx-a11y/label-has-associated-control": "off"
+    "react/jsx-indent": "off"
   }
 }

@@ -10,7 +10,9 @@ describe('Grid', () => {
         className={className}
         data-testid="target"
         skeletonProps={{darkTheme: false}}
-      />,
+      >
+        Test
+      </Grid>,
     );
     const element = getByTestId('target');
     expect(element).toHaveClass(className);

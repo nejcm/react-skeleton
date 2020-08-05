@@ -1,9 +1,27 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import Skeleton from '../../Skeleton';
+import Skeleton, {SkeletonProps} from '../../Skeleton';
 import {Wrapper} from './styles';
 
-export const Paragraph = ({
+export interface ParagraphProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Show header
+   */
+  header?: boolean;
+  /**
+   * Number of pragraph lines "3"
+   */
+  lines?: number;
+  /**
+   * Array of rotating line widths. "['100%', '100%', '75%', '35%', '50%', '85%']"
+   */
+  widths?: (string | number)[];
+  /**
+   * Skeleton component props
+   */
+  skeletonProps?: SkeletonProps;
+}
+
+export const Paragraph: React.SFC<ParagraphProps> = ({
   header,
   lines = 3,
   widths = ['100%', '100%', '75%', '35%', '50%', '85%'],
@@ -31,30 +49,3 @@ export const Paragraph = ({
     </Skeleton>
   );
 };
-
-Paragraph.propTypes = {
-  /**
-   * Show header
-   */
-  header: PropTypes.bool,
-  /**
-   * Number of pragraph lines "3"
-   */
-  lines: PropTypes.number,
-  /**
-   * Array of rotating line widths. "['100%', '100%', '75%', '35%', '50%', '85%']"
-   */
-  widths: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  ),
-  /**
-   * Skeleton component props
-   */
-  skeletonProps: PropTypes.object,
-  className: PropTypes.string,
-  children: PropTypes.node,
-};
-/*Paragraph.defaultProps = {
-  widths: ['100%', '100%', '75%', '35%', '50%', '85%'],
-  lines: 3,
-};*/

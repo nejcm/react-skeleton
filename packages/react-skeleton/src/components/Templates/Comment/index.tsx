@@ -1,10 +1,28 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import Skeleton from '../../Skeleton';
+import Skeleton, {SkeletonProps} from '../../Skeleton';
 import {Paragraph} from '../Paragraph';
 import {Wrapper} from './styles';
 
-const Comment = ({
+export interface CommentProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Avatar size "45"
+   */
+  avatarSize?: number;
+  /**
+   * Display avatar image as a circle "true"
+   */
+  avatarCircle?: boolean;
+  /**
+   * Number of comment lines "3"
+   */
+  lines?: number;
+  /**
+   * Skeleton component props
+   */
+  skeletonProps?: SkeletonProps;
+}
+
+const Comment: React.SFC<CommentProps> = ({
   avatarSize = 45,
   avatarCircle = true,
   lines = 3,
@@ -37,31 +55,5 @@ const Comment = ({
     </Wrapper>
   </Skeleton>
 );
-
-Comment.propTypes = {
-  /**
-   * Avatar size "45"
-   */
-  avatarSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /**
-   * Display avatar image as a circle "true"
-   */
-  avatarCircle: PropTypes.bool,
-  /**
-   * Number of comment lines "3"
-   */
-  lines: PropTypes.number,
-  /**
-   * Skeleton component props
-   */
-  skeletonProps: PropTypes.object,
-  className: PropTypes.string,
-  children: PropTypes.node,
-};
-/*Comment.defaultProps = {
-  avatarSize: 45,
-  avatarCircle: true,
-  lines: 3,
-};*/
 
 export {Comment};
