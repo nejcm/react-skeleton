@@ -21,8 +21,8 @@
     "composite": true,
     "strict": true,
     "target": "es5",
-    "types": ["react", "jest", "@testing-library/jest-dom"]
+    "types": ["react"]
   },
-  "include": ["src", "types"],
+  "include": ["src", "../react-skeleton/src"],
   "exclude": ["node_modules", "dist"]
 }

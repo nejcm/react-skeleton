@@ -21,7 +21,7 @@ export interface ParagraphProps extends React.HTMLAttributes<HTMLDivElement> {
   skeletonProps?: SkeletonProps;
 }
 
-export const Paragraph: React.SFC<ParagraphProps> = ({
+export const Paragraph: React.FC<ParagraphProps> = ({
   header,
   lines = 3,
   widths = ['100%', '100%', '75%', '35%', '50%', '85%'],
@@ -49,3 +49,5 @@ export const Paragraph: React.SFC<ParagraphProps> = ({
     </Skeleton>
   );
 };
+
+Paragraph.displayName = 'Paragraph';

@@ -1,6 +1,7 @@
 const pkgName = 'react-skeleton';
 
 export default {
+  typescript: true,
   lang: 'en',
   ignore: [
     '**/*.md',
@@ -12,7 +13,7 @@ export default {
   ],
   title: pkgName,
   base: `/${pkgName}/`,
-  description: `Documentation on ${pkgName} loader`,
+  description: `Documentation for ${pkgName} loader`,
   menu: [
     'Introduction',
     'Getting started',
@@ -28,7 +29,7 @@ export default {
   },
   favicon: './public/assets/favicon.png',
   htmlContext: {
-    favicon: './assets/favicon.ico',
+    favicon: './public/assets/favicon.ico',
   },
   themeConfig: {
     search: true,
@@ -53,12 +54,11 @@ export default {
   },
   docgenConfig: {
     searchPatterns: [
-      "../**/*.{ts,tsx,js,jsx,mjs}",
-      "../react-skeleton/src/components/**/*.{ts,tsx,js,jsx,mjs}",
+      "../**/*.{js,jsx,ts,tsx,mjs}",
+      "../react-skeleton/src/components/**/*.{js,jsx,ts,tsx,mjs}",
       "!**/node_modules",
       "!../**/node_modules",
       "!**/doczrc.js",
-      "!../**/doczrc.js",
     ]
-  },
+  }
 };

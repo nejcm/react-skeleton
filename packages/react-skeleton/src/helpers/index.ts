@@ -4,7 +4,7 @@ export const measure2Css = (
   return value ? (typeof value === 'string' ? value : `${value}px`) : undefined;
 };
 
-export interface Styles extends React.HTMLAttributes<HTMLElement> {
+export interface Styles {
   /**
    * Element width
    */
@@ -29,6 +29,9 @@ export interface Styles extends React.HTMLAttributes<HTMLElement> {
    * Element min height
    */
   minHeight?: string | number;
+
+  style?: React.CSSProperties;
+  [key: string]: unknown;
 }
 
 export const extractStyles = ({

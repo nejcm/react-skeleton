@@ -11,7 +11,7 @@
   "scripts": {
     "format": "yarn workspace @nejcm/react-skeleton format && yarn workspace @nejcm/react-skeleton-emotion format",
     "docz:dev": "yarn workspace @nejcm/react-skeleton-docs docz:dev",
-    "docz": "yarn workspace @nejcm/react-skeleton-docs docz:build",
+    "docz:build": "yarn workspace @nejcm/react-skeleton-docs docz:build",
     "test": "yarn workspace @nejcm/react-skeleton test",
     "lint": "yarn workspace @nejcm/react-skeleton lint && yarn workspace @nejcm/react-skeleton-emotion lint",
     "build": "yarn workspace @nejcm/react-skeleton build && yarn workspace @nejcm/react-skeleton-emotion build",
@@ -25,9 +25,6 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
-  },
-  "resolutions": {
-    "gatsby": "2.22.15"
   },
   "husky": {
     "hooks": {

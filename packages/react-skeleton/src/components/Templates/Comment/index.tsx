@@ -22,7 +22,7 @@ export interface CommentProps extends React.HTMLAttributes<HTMLDivElement> {
   skeletonProps?: SkeletonProps;
 }
 
-const Comment: React.SFC<CommentProps> = ({
+export const Comment: React.FC<CommentProps> = ({
   avatarSize = 45,
   avatarCircle = true,
   lines = 3,
@@ -56,4 +56,4 @@ const Comment: React.SFC<CommentProps> = ({
   </Skeleton>
 );
 
-export {Comment};
+Comment.displayName = 'Comment';

@@ -14,7 +14,7 @@ export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
   darkTheme?: boolean;
 }
 
-const Skeleton: React.SFC<SkeletonProps> & {
+const Skeleton: React.FC<SkeletonProps> & {
   Rectangle: typeof Rectangle;
   Circle: typeof Circle;
 } = ({active = true, darkTheme, className, ...rest}) => (

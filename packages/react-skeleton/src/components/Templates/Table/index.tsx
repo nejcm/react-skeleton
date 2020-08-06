@@ -25,7 +25,7 @@ export interface TableProps extends React.HTMLAttributes<HTMLTableElement> {
   skeletonProps?: SkeletonProps;
 }
 
-export const Table: React.SFC<TableProps> = ({
+export const Table: React.FC<TableProps> = ({
   head = true,
   rows = 3,
   cols = 4,
@@ -77,3 +77,5 @@ export const Table: React.SFC<TableProps> = ({
     </Skeleton>
   );
 };
+
+Table.displayName = 'Table';

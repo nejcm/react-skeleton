@@ -30,7 +30,7 @@ export interface FormProps extends React.HTMLAttributes<HTMLDivElement> {
   skeletonProps?: SkeletonProps;
 }
 
-export const Form: React.SFC<FormProps> = ({
+export const Form: React.FC<FormProps> = ({
   inputs = 3,
   inputHeight,
   button = true,
@@ -65,3 +65,5 @@ export const Form: React.SFC<FormProps> = ({
     </Skeleton>
   );
 };
+
+Form.displayName = 'Form';

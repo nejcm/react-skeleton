@@ -31,7 +31,7 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   skeletonProps?: SkeletonProps;
 }
 
-export const Card: React.SFC<CardProps> = ({
+const Card: React.FC<CardProps> = ({
   width,
   maxWidth,
   image,
@@ -42,29 +42,29 @@ export const Card: React.SFC<CardProps> = ({
   children,
   style,
   ...rest
-}) => {
-  const internalStyle = {
-    width: measure2Css(width),
-    maxWidth: measure2Css(maxWidth),
-    ...style,
-  };
-  return (
-    <Skeleton {...skeletonProps}>
-      <Wrapper
-        className={`s-card ${className || ''}`}
-        style={internalStyle}
-        {...rest}
-      >
-        {image ? <Skeleton.Rectangle className="s-image" height={200} /> : null}
-        {header || paragraph ? (
-          <Paragraph
-            header={header}
-            lines={paragraph ? 3 : 0}
-            skeletonProps={skeletonProps}
-          />
-        ) : null}
-        {children}
-      </Wrapper>
-    </Skeleton>
-  );
-};
+}) => (
+  <Skeleton {...skeletonProps}>
+    <Wrapper
+      className={`s-card ${className || ''}`}
+      style={{
+        width: measure2Css(width),
+        maxWidth: measure2Css(maxWidth),
+        ...style,
+      }}
+      {...rest}
+    >
+      {image ? <Skeleton.Rectangle className="s-image" height={200} /> : null}
+      {header || paragraph ? (
+        <Paragraph
+          header={header}
+          lines={paragraph ? 3 : 0}
+          skeletonProps={skeletonProps}
+        />
+      ) : null}
+      {children}
+    </Wrapper>
+  </Skeleton>
+);
+
+Card.displayName = 'Card';
+export {Card};

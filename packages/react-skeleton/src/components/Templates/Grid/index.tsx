@@ -23,7 +23,7 @@ export interface GridProps
   children: RenderPropFunction | React.ReactNode;
 }
 
-export const Grid: React.SFC<GridProps> = ({
+export const Grid: React.FC<GridProps> = ({
   cols = 3,
   skeletonProps,
   className,
@@ -44,3 +44,5 @@ export const Grid: React.SFC<GridProps> = ({
     </Skeleton>
   );
 };
+
+Grid.displayName = 'Grid';

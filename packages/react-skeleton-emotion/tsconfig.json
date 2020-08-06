@@ -22,8 +22,8 @@
     "target": "es5",
     "types": ["react", "jest", "@testing-library/jest-dom"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "src/__stories__"],
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "dist"],
   "references": [
     {
       "path": "../react-skeleton"

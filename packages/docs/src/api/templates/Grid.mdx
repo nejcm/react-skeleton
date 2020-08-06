@@ -24,9 +24,11 @@ Grid template
 
 ### With callback
 
+Display header loader only in first card
 <Playground>
-  <Grid cols={5}>{(index) => <Card image header={index < 2} />}</Grid>
+  <Grid cols={3}>{(index) => <Card image header={index === 0} />}</Grid>
 </Playground>
+
 
 ## Props
 
