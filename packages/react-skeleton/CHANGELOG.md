@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/nejcm/react-skeleton/compare/v3.1.0...v3.1.1) (2020-08-06)
+
+
+### Bug Fixes
+
+* fixed docs ([5a80fda](https://github.com/nejcm/react-skeleton/commit/5a80fda2c77c52ab4247699c1b8217bd63da4d29))
+
 # [3.1.0](https://github.com/nejcm/react-skeleton/compare/v3.0.6...v3.1.0) (2020-08-05)
 
 
