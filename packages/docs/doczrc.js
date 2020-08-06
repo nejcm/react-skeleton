@@ -16,7 +16,6 @@ export default {
   description: `Documentation for ${pkgName} loader`,
   menu: [
     'Introduction',
-    'Getting started',
     'Installation',
     'Skeleton',
     {

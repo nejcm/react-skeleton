@@ -41,7 +41,7 @@ jobs:
         - PRODUCTION=production
       script:
         - echo "Deploying to github pages ..."
-        - yarn docz
+        - yarn docz:build
       deploy:
         provider: pages
         local_dir: packages/docs/.docz/dist

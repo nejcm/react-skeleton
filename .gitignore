@@ -32,3 +32,4 @@ yarn-error.log*
 # when working with contributors
 package-lock.json
 yarn.lock
+/packages/react-skeleton-emotion/types/index.d.ts
